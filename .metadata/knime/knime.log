@@ -1,0 +1,890 @@
+2025-05-24 21:03:13,888 : WARN  : comm-pool-thread-1 :  : Node : CSV Reader : 3:1 : Please specify a file
+2025-05-24 22:34:55,262 : ERROR : Clear OSGi configuration :  : InvokeInstallSiteAction :  :  : Could not clean OSGi configuration area: C:\Users\olgt1\AppData\Local\Programs\KNIME\configuration\org.eclipse.osgi\302\0\.cp\os\win32\x86_64\localfile_1_0_0.dll
+2025-05-24 22:37:30,467 : WARN  : comm-pool-thread-2 :  : Node : Strings to Document : 3:6 : Name of selected title column can't be empty.
+2025-05-24 22:44:43,947 : WARN  : comm-pool-thread-2 :  : Node : Case Converter : 3:7 : No columns selected
+2025-05-24 22:45:47,957 : WARN  : KNIME-Worker-7-Case Converter 3:7 :  : Node : Case Converter : 3:7 : Execution canceled
+2025-05-24 22:46:08,777 : WARN  : comm-pool-thread-2 :  : Node : Case Converter : 3:7 : Column index for Document not found.
+2025-05-24 22:46:15,594 : WARN  : comm-pool-thread-2 :  : Node : Case Converter : 3:7 : Column index for Document not found.
+2025-05-24 22:46:24,642 : WARN  : KNIME-Worker-13-Missing Value 3:5 :  : Node : Case Converter : 3:7 : Column index for Document not found.
+2025-05-24 22:46:56,401 : WARN  : comm-pool-thread-2 :  : Node : Punctuation Erasure : 3:8 : There have to be at least 1 columns containing DocumentCells !
+2025-05-24 22:59:16,259 : WARN  : main :  : Node : Stop Word Filter : 3:10 : Can't create new column "Preprocessed Document" as input spec already contains such column!
+2025-05-24 22:59:16,610 : WARN  : main :  : Node : Stop Word Filter : 3:10 : Can't create new column "Preprocessed Document" as input spec already contains such column!
+2025-05-24 22:59:21,509 : WARN  : comm-pool-thread-2 :  : Node : Stop Word Filter : 3:10 : Can't create new column "Preprocessed Document" as input spec already contains such column!
+2025-05-24 22:59:47,050 : WARN  : KNIME-Worker-32-Punctuation Erasure 3:8 :  : Node : Stop Word Filter : 3:10 : Can't create new column "Preprocessed Document" as input spec already contains such column!
+2025-05-24 23:02:00,810 : WARN  : main :  : Node : Stop Word Filter : 3:10 : Can't create new column "Preprocessed Document" as input spec already contains such column!
+2025-05-24 23:02:03,362 : WARN  : main :  : Node : Stop Word Filter : 3:10 : Can't create new column "Preprocessed Document" as input spec already contains such column!
+2025-05-24 23:02:18,157 : WARN  : main :  : Node : Stop Word Filter : 3:10 : Selected document column "Preprocessed Document" could not be found in the input data table.
+2025-05-24 23:02:18,875 : WARN  : main :  : Node : Stop Word Filter : 3:10 : Selected document column "Preprocessed Document" could not be found in the input data table.
+2025-05-24 23:06:24,193 : WARN  : comm-pool-thread-2 :  : Node : Bag Of Words Creator : 3:11 : Auto guessing: Using column 'Document' as DocumentValue column.
+2025-05-24 23:10:32,935 : WARN  : comm-pool-thread-2 :  : Node : Partitioning : 3:12 : No sampling method selected
+2025-05-24 23:10:38,215 : WARN  : KNIME-Worker-66-Number Filter 3:9 :  : Node : Partitioning : 3:12 : No sampling method selected
+2025-05-24 23:12:22,790 : WARN  : comm-pool-thread-2 :  : Node : Naive Bayes Learner : 3:13 : Please define the classification column
+2025-05-24 23:12:24,016 : ERROR : Thread-42045 :  : KnimeBrowserView :  :  : %cerror%c Error captured hook ::  
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-24 23:12:52,853 : WARN  : KNIME-Worker-82-Partitioning 3:12 :  : Node : Naive Bayes Learner : 3:13 : Please define the classification column
+2025-05-24 23:13:35,597 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:13:37,038 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:13:39,906 : ERROR : KNIME-Worker-83-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : Execute failed: Missing class value found in row Row98 to skip missing values tick the box in the dialog
+org.knime.core.node.InvalidSettingsException: Missing class value found in row Row98 to skip missing values tick the box in the dialog
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.updateModel(NaiveBayesModel.java:397)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.createModel(NaiveBayesModel.java:364)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.<init>(NaiveBayesModel.java:239)
+	at org.knime.base.node.mine.bayes.naivebayes.learner3.NaiveBayesLearnerNodeModel3.execute(NaiveBayesLearnerNodeModel3.java:365)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-05-24 23:13:39,912 : WARN  : KNIME-Worker-83-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:13:51,958 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:13:52,310 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:14:14,167 : ERROR : Thread-45474 :  : KnimeBrowserView :  :  : %cerror%c Error captured hook ::  
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-24 23:14:21,940 : ERROR : KNIME-Worker-84-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : Execute failed: Missing class value found in row Row98 to skip missing values tick the box in the dialog
+org.knime.core.node.InvalidSettingsException: Missing class value found in row Row98 to skip missing values tick the box in the dialog
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.updateModel(NaiveBayesModel.java:397)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.createModel(NaiveBayesModel.java:364)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.<init>(NaiveBayesModel.java:239)
+	at org.knime.base.node.mine.bayes.naivebayes.learner3.NaiveBayesLearnerNodeModel3.execute(NaiveBayesLearnerNodeModel3.java:365)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-05-24 23:14:21,942 : WARN  : KNIME-Worker-84-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:14:47,992 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:14:48,254 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:14:49,603 : ERROR : KNIME-Worker-85-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : Execute failed: Class attribute has too many unique values. To avoid this exception increase the maximum number of allowed nominal values in the node dialog
+org.knime.core.node.InvalidSettingsException: Class attribute has too many unique values. To avoid this exception increase the maximum number of allowed nominal values in the node dialog
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.updateModel(NaiveBayesModel.java:410)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.createModel(NaiveBayesModel.java:364)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.<init>(NaiveBayesModel.java:239)
+	at org.knime.base.node.mine.bayes.naivebayes.learner3.NaiveBayesLearnerNodeModel3.execute(NaiveBayesLearnerNodeModel3.java:365)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-05-24 23:14:49,604 : WARN  : KNIME-Worker-85-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:16:07,008 : WARN  : comm-pool-thread-2 :  : Node : TF : 3:17 : Auto guessing: Using column 'Document' as DocumentValue column.
+2025-05-24 23:17:23,328 : WARN  : comm-pool-thread-2 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:17:50,096 : WARN  : main :  : WrappedNodeDialog : Partitioning : 3:12 : failed to apply settings: Cannot load settings into node; it is executing or has executing successors
+java.lang.IllegalStateException: Cannot load settings into node; it is executing or has executing successors
+	at org.knime.core.node.workflow.WorkflowManager.loadNodeSettings(WorkflowManager.java:2257)
+	at org.knime.core.node.workflow.NodeContainer.applySettingsFromDialog(NodeContainer.java:1142)
+	at org.knime.core.ui.wrapper.NodeContainerWrapper.applySettingsFromDialog(NodeContainerWrapper.java:264)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.callApplySettingsFromDialog(WrappedNodeDialog.java:677)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doApply(WrappedNodeDialog.java:649)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog$6.widgetSelected(WrappedNodeDialog.java:515)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.open(WrappedNodeDialog.java:198)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openDialog(NodeContainerEditPart.java:967)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:869)
+	at org.knime.ui.java.api.NodeAPI.openNodeDialog(NodeAPI.java:102)
+	at jdk.internal.reflect.GeneratedMethodAccessor160.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.knime.ui.java.api.DesktopAPI.invokeMethod(DesktopAPI.java:178)
+	at org.knime.ui.java.api.DesktopAPI.lambda$1(DesktopAPI.java:148)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:211)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+2025-05-24 23:17:50,488 : WARN  : KNIME-Worker-87-Partitioning 3:12 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:17:56,032 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:18:36,245 : WARN  : KNIME-Worker-88-Partitioning 3:12 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:18:37,841 : ERROR : KNIME-Worker-89-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : Execute failed: Class attribute has too many unique values. To avoid this exception increase the maximum number of allowed nominal values in the node dialog
+org.knime.core.node.InvalidSettingsException: Class attribute has too many unique values. To avoid this exception increase the maximum number of allowed nominal values in the node dialog
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.updateModel(NaiveBayesModel.java:410)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.createModel(NaiveBayesModel.java:364)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.<init>(NaiveBayesModel.java:239)
+	at org.knime.base.node.mine.bayes.naivebayes.learner3.NaiveBayesLearnerNodeModel3.execute(NaiveBayesLearnerNodeModel3.java:365)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-05-24 23:18:37,843 : WARN  : KNIME-Worker-89-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:18:47,834 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:18:48,079 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:18:49,508 : ERROR : KNIME-Worker-90-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : Execute failed: Missing class value found in row Row99 to skip missing values tick the box in the dialog
+org.knime.core.node.InvalidSettingsException: Missing class value found in row Row99 to skip missing values tick the box in the dialog
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.updateModel(NaiveBayesModel.java:397)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.createModel(NaiveBayesModel.java:364)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.<init>(NaiveBayesModel.java:239)
+	at org.knime.base.node.mine.bayes.naivebayes.learner3.NaiveBayesLearnerNodeModel3.execute(NaiveBayesLearnerNodeModel3.java:365)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-05-24 23:18:49,509 : WARN  : KNIME-Worker-90-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:18:53,045 : ERROR : Thread-52448 :  : KnimeBrowserView :  :  : %cerror%c Error captured hook ::  
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-24 23:19:01,248 : ERROR : Thread-52789 :  : KnimeBrowserView :  :  : %cerror%c Error captured hook ::  
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-24 23:19:38,137 : WARN  : comm-pool-thread-2 :  : Node : Document Vector : 3:18 : Auto guessing: Using column 'Document' as DocumentValue column.
+2025-05-24 23:21:38,991 : WARN  : comm-pool-thread-2 :  : Node : Partitioning : 3:19 : No sampling method selected
+2025-05-24 23:23:55,036 : ERROR : KNIME-Worker-92-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : Execute failed: Missing class value found in row Row99 to skip missing values tick the box in the dialog
+org.knime.core.node.InvalidSettingsException: Missing class value found in row Row99 to skip missing values tick the box in the dialog
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.updateModel(NaiveBayesModel.java:397)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.createModel(NaiveBayesModel.java:364)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.<init>(NaiveBayesModel.java:239)
+	at org.knime.base.node.mine.bayes.naivebayes.learner3.NaiveBayesLearnerNodeModel3.execute(NaiveBayesLearnerNodeModel3.java:365)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-05-24 23:23:55,044 : WARN  : KNIME-Worker-92-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:24:00,570 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:24:00,881 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:24:02,246 : ERROR : KNIME-Worker-93-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : Execute failed: Missing class value found in row Row99 to skip missing values tick the box in the dialog
+org.knime.core.node.InvalidSettingsException: Missing class value found in row Row99 to skip missing values tick the box in the dialog
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.updateModel(NaiveBayesModel.java:397)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.createModel(NaiveBayesModel.java:364)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.<init>(NaiveBayesModel.java:239)
+	at org.knime.base.node.mine.bayes.naivebayes.learner3.NaiveBayesLearnerNodeModel3.execute(NaiveBayesLearnerNodeModel3.java:365)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-05-24 23:24:02,248 : WARN  : KNIME-Worker-93-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:24:17,881 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:24:19,218 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:24:21,293 : ERROR : KNIME-Worker-94-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : Execute failed: Class attribute has too many unique values. To avoid this exception increase the maximum number of allowed nominal values in the node dialog
+org.knime.core.node.InvalidSettingsException: Class attribute has too many unique values. To avoid this exception increase the maximum number of allowed nominal values in the node dialog
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.updateModel(NaiveBayesModel.java:410)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.createModel(NaiveBayesModel.java:364)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.<init>(NaiveBayesModel.java:239)
+	at org.knime.base.node.mine.bayes.naivebayes.learner3.NaiveBayesLearnerNodeModel3.execute(NaiveBayesLearnerNodeModel3.java:365)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-05-24 23:24:21,294 : WARN  : KNIME-Worker-94-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:24:22,249 : ERROR : KNIME-Worker-95-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : Execute failed: Class attribute has too many unique values. To avoid this exception increase the maximum number of allowed nominal values in the node dialog
+org.knime.core.node.InvalidSettingsException: Class attribute has too many unique values. To avoid this exception increase the maximum number of allowed nominal values in the node dialog
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.updateModel(NaiveBayesModel.java:410)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.createModel(NaiveBayesModel.java:364)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.<init>(NaiveBayesModel.java:239)
+	at org.knime.base.node.mine.bayes.naivebayes.learner3.NaiveBayesLearnerNodeModel3.execute(NaiveBayesLearnerNodeModel3.java:365)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-05-24 23:24:22,250 : WARN  : KNIME-Worker-95-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:24:22,910 : ERROR : KNIME-Worker-96-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : Execute failed: Class attribute has too many unique values. To avoid this exception increase the maximum number of allowed nominal values in the node dialog
+org.knime.core.node.InvalidSettingsException: Class attribute has too many unique values. To avoid this exception increase the maximum number of allowed nominal values in the node dialog
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.updateModel(NaiveBayesModel.java:410)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.createModel(NaiveBayesModel.java:364)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.<init>(NaiveBayesModel.java:239)
+	at org.knime.base.node.mine.bayes.naivebayes.learner3.NaiveBayesLearnerNodeModel3.execute(NaiveBayesLearnerNodeModel3.java:365)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-05-24 23:24:22,912 : WARN  : KNIME-Worker-96-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:24:23,067 : ERROR : KNIME-Worker-97-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : Execute failed: Class attribute has too many unique values. To avoid this exception increase the maximum number of allowed nominal values in the node dialog
+org.knime.core.node.InvalidSettingsException: Class attribute has too many unique values. To avoid this exception increase the maximum number of allowed nominal values in the node dialog
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.updateModel(NaiveBayesModel.java:410)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.createModel(NaiveBayesModel.java:364)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.<init>(NaiveBayesModel.java:239)
+	at org.knime.base.node.mine.bayes.naivebayes.learner3.NaiveBayesLearnerNodeModel3.execute(NaiveBayesLearnerNodeModel3.java:365)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-05-24 23:24:23,069 : WARN  : KNIME-Worker-97-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:26:39,358 : WARN  : comm-pool-thread-2 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:27:03,856 : WARN  : KNIME-Worker-98-Partitioning 3:19 :  : Node : Partitioning : 3:19 : Execution canceled
+2025-05-24 23:27:35,184 : ERROR : Thread-64888 :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:18 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:17, 3:19] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-24 23:27:35,190 : ERROR : Thread-64890 :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-24 23:27:35,191 : ERROR : Thread-64892 :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:18 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:17, 3:19] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 45)
+2025-05-24 23:28:18,766 : WARN  : comm-pool-thread-2 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:28:31,515 : WARN  : KNIME-Worker-100-Table Manipulator 3:2 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:28:59,960 : WARN  : KNIME-Worker-104-Strings to Document 3:6 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:29:22,123 : WARN  : KNIME-Worker-110-Punctuation Erasure 3:8 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:30:25,030 : WARN  : KNIME-Worker-100-Stop Word Filter 3:10 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:31:45,946 : WARN  : KNIME-Worker-106-Number Filter 3:9 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:33:10,444 : WARN  : KNIME-Worker-113-Bag Of Words Creator 3:11 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:34:09,051 : WARN  : KNIME-Worker-114-TF 3:17 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:34:41,896 : WARN  : KNIME-Worker-116-Partitioning 3:12 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:34:41,898 : ERROR : KNIME-Worker-117-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : Execute failed: Class attribute has too many unique values. To avoid this exception increase the maximum number of allowed nominal values in the node dialog
+org.knime.core.node.InvalidSettingsException: Class attribute has too many unique values. To avoid this exception increase the maximum number of allowed nominal values in the node dialog
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.updateModel(NaiveBayesModel.java:410)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.createModel(NaiveBayesModel.java:364)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.<init>(NaiveBayesModel.java:239)
+	at org.knime.base.node.mine.bayes.naivebayes.learner3.NaiveBayesLearnerNodeModel3.execute(NaiveBayesLearnerNodeModel3.java:365)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-05-24 23:34:41,899 : WARN  : KNIME-Worker-117-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:35:47,964 : ERROR : Thread-68997 :  : KnimeBrowserView :  :  : %cerror%c Error captured hook ::  
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-24 23:37:12,833 : ERROR : Thread-71570 :  : KnimeBrowserView :  :  : %cerror%c Error captured hook ::  
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-24 23:38:00,519 : ERROR : Thread-71979 :  : KnimeBrowserView :  :  : %cerror%c Error captured hook ::  
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-24 23:38:03,338 : ERROR : KNIME-Worker-118-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : Execute failed: Class attribute has too many unique values. To avoid this exception increase the maximum number of allowed nominal values in the node dialog
+org.knime.core.node.InvalidSettingsException: Class attribute has too many unique values. To avoid this exception increase the maximum number of allowed nominal values in the node dialog
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.updateModel(NaiveBayesModel.java:410)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.createModel(NaiveBayesModel.java:364)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.<init>(NaiveBayesModel.java:239)
+	at org.knime.base.node.mine.bayes.naivebayes.learner3.NaiveBayesLearnerNodeModel3.execute(NaiveBayesLearnerNodeModel3.java:365)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-05-24 23:38:03,342 : WARN  : KNIME-Worker-118-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-24 23:40:11,041 : ERROR : Thread-74216 :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:17 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:18] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-24 23:40:11,047 : ERROR : Thread-74218 :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-24 23:40:11,048 : ERROR : Thread-74220 :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:17 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:18] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 45)
+2025-05-24 23:40:14,710 : WARN  : comm-pool-thread-2 :  : Node : Document Vector : 3:18 : Auto guessing: Using column 'Document' as DocumentValue column.
+2025-05-24 23:40:59,400 : WARN  : comm-pool-thread-2 :  : Node : Partitioning : 3:12 : Column 'Sentiment' for stratified sampling does not exist
+2025-05-24 23:42:54,469 : WARN  : KNIME-Worker-119-Document Vector 3:18 :  : Node : Document Vector : 3:18 : Execution canceled
+2025-05-24 23:42:54,510 : WARN  : KNIME-Worker-119-Document Vector 3:18 :  : Node : Partitioning : 3:12 : Column 'Sentiment' for stratified sampling does not exist
+2025-05-24 23:43:28,271 : WARN  : main :  : Node : Partitioning : 3:12 : Column 'Sentiment' for stratified sampling does not exist
+2025-05-24 23:43:28,623 : WARN  : main :  : Node : Partitioning : 3:12 : Column 'Sentiment' for stratified sampling does not exist
+2025-05-24 23:51:19,956 : WARN  : KNIME-Worker-120-Document Vector 3:18 :  : Node : Document Vector : 3:18 : Execution canceled
+2025-05-24 23:51:20,073 : WARN  : KNIME-Worker-120-Document Vector 3:18 :  : Node : Partitioning : 3:12 : Column 'Sentiment' for stratified sampling does not exist
+2025-05-24 23:51:33,991 : WARN  : comm-pool-thread-2 :  : Node : Partitioning : 3:12 : Column 'Sentiment' for stratified sampling does not exist
+2025-05-24 23:51:36,615 : WARN  : comm-pool-thread-2 :  : Node : Partitioning : 3:12 : Column 'Sentiment' for stratified sampling does not exist
+2025-05-24 23:51:59,644 : WARN  : main :  : Node : Partitioning : 3:12 : Column 'Sentiment' for stratified sampling does not exist
+2025-05-24 23:52:00,158 : WARN  : main :  : Node : Partitioning : 3:12 : Column 'Sentiment' for stratified sampling does not exist
+2025-05-24 23:52:46,921 : WARN  : KNIME-Worker-126-Document Vector 3:18 :  : Node : Partitioning : 3:12 : Column 'Sentiment' for stratified sampling does not exist
+2025-05-24 23:53:10,618 : WARN  : main :  : WrappedNodeDialog : Partitioning : 3:12 : failed to apply settings: No class column for stratified sampling selected
+org.knime.core.node.InvalidSettingsException: No class column for stratified sampling selected
+	at org.knime.base.node.preproc.sample.AbstractSamplingNodeModel.validateSettings(AbstractSamplingNodeModel.java:120)
+	at org.knime.core.node.Node.validateSettings(Node.java:713)
+	at org.knime.core.node.Node.validateModelSettings(Node.java:685)
+	at org.knime.core.node.workflow.NativeNodeContainer.performValidateSettings(NativeNodeContainer.java:1202)
+	at org.knime.core.node.workflow.SingleNodeContainer.validateSettings(SingleNodeContainer.java:1173)
+	at org.knime.core.node.workflow.WorkflowManager.loadNodeSettings(WorkflowManager.java:2244)
+	at org.knime.core.node.workflow.NodeContainer.applySettingsFromDialog(NodeContainer.java:1142)
+	at org.knime.core.ui.wrapper.NodeContainerWrapper.applySettingsFromDialog(NodeContainerWrapper.java:264)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.callApplySettingsFromDialog(WrappedNodeDialog.java:677)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doApply(WrappedNodeDialog.java:649)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog$6.widgetSelected(WrappedNodeDialog.java:515)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.open(WrappedNodeDialog.java:198)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openDialog(NodeContainerEditPart.java:967)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:869)
+	at org.knime.ui.java.api.NodeAPI.openNodeDialog(NodeAPI.java:102)
+	at jdk.internal.reflect.GeneratedMethodAccessor160.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.knime.ui.java.api.DesktopAPI.invokeMethod(DesktopAPI.java:178)
+	at org.knime.ui.java.api.DesktopAPI.lambda$1(DesktopAPI.java:148)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:211)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+2025-05-24 23:53:55,018 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-24 23:53:55,459 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-24 23:54:00,168 : WARN  : KNIME-Worker-137-Partitioning 3:12 :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-24 23:57:43,022 : ERROR : Thread-98139 :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:20 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:18, 3:19] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-24 23:57:43,024 : ERROR : Thread-98141 :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-24 23:57:43,026 : ERROR : Thread-98143 :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:20 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:18, 3:19] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 45)
+2025-05-25 00:01:44,262 : ERROR : Clear OSGi configuration :  : InvokeInstallSiteAction :  :  : Could not clean OSGi configuration area: C:\Users\olgt1\AppData\Local\Programs\KNIME\configuration\org.eclipse.osgi\315\0\.cp\os\win32\x86_64\localfile_1_0_0.dll
+2025-05-25 00:02:23,617 : WARN  : ModalContext :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:05:01,773 : ERROR : Thread-7786 :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:22 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:18, 3:19, 3:20, 3:21] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-25 00:05:01,774 : ERROR : Thread-7788 :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-25 00:05:01,777 : ERROR : Thread-7790 :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:22 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:18, 3:19, 3:20, 3:21] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 45)
+2025-05-25 00:05:05,535 : ERROR : Thread-8132 :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:21 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:18, 3:19, 3:20] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-25 00:05:05,538 : ERROR : Thread-8134 :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-25 00:05:05,541 : ERROR : Thread-8136 :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:21 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:18, 3:19, 3:20] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 45)
+2025-05-25 00:05:10,865 : WARN  : comm-pool-thread-2 :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:05:26,110 : WARN  : main :  : Node : Strings to Document : 3:6 : Column 'Sentiment' does not exist in input table or does not contain a String value.
+2025-05-25 00:05:26,636 : WARN  : main :  : Node : Strings to Document : 3:6 : Column 'Sentiment' does not exist in input table or does not contain a String value.
+2025-05-25 00:05:42,927 : WARN  : KNIME-Worker-1-CSV Reader 3:1 :  : Node : CSV Reader : 3:1 : Execution canceled
+2025-05-25 00:05:46,442 : WARN  : KNIME-Worker-1-Table Manipulator 3:2 :  : Node : Strings to Document : 3:6 : Column 'Sentiment' does not exist in input table or does not contain a String value.
+2025-05-25 00:05:47,015 : WARN  : KNIME-Worker-2-Case Converter 3:7 :  : Node : Strings to Document : 3:6 : Column 'Sentiment' does not exist in input table or does not contain a String value.
+2025-05-25 00:06:17,446 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:06:17,877 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:07:13,050 : ERROR : Thread-12459 :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:20 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:18, 3:19] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-25 00:07:13,056 : ERROR : Thread-12461 :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-25 00:07:13,057 : ERROR : Thread-12463 :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:20 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:18, 3:19] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 45)
+2025-05-25 00:07:16,184 : WARN  : KNIME-Worker-16-Document Vector 3:18 :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:07:39,807 : WARN  : KNIME-Worker-10-Partitioning 3:12 :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:10:01,191 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:10:01,854 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:10:06,103 : WARN  : comm-pool-thread-2 :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:10:24,239 : WARN  : KNIME-Worker-25-String to Number 3:20 :  : Node : String to Number : 3:20 : Problems in 651113 rows, first error: "B001E4KFG0" in cell ["Row0", column "id", row 1] can not be transformed into a number
+2025-05-25 00:10:24,245 : WARN  : KNIME-Worker-25-String to Number 3:20 :  : Node : String to Number : 3:20 : Problems in 651113 rows, first error: "B001E4KFG0" in cell ["Row0", column "id", row 1] can not be transformed into a number
+ RowID  |     id     | overall
+--------+------------+---------
+ Row0   | B001E4KFG0 | 5      
+          ^^^^^^^^^^
+For input string: "B001E4KFG0"
+2025-05-25 00:10:33,034 : ERROR : Thread-19567 :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:20 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:18, 3:19] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-25 00:10:33,045 : ERROR : Thread-19571 :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-25 00:10:33,047 : ERROR : Thread-19573 :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:20 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:18, 3:19] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 45)
+2025-05-25 00:10:47,050 : WARN  : KNIME-Worker-20-Document Vector 3:18 :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:10:50,472 : WARN  : KNIME-Worker-19-Partitioning 3:12 :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:10:57,046 : WARN  : comm-pool-thread-2 :  : Node : Edit Nominal Domain : 3:20 : Missing Configuration.
+2025-05-25 00:11:24,899 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:11:29,638 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:12:16,793 : WARN  : comm-pool-thread-2 :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:12:49,266 : WARN  : KNIME-Worker-46-Document Vector 3:18 :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:12:53,397 : WARN  : KNIME-Worker-40-Partitioning 3:12 :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:14:21,946 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:14:22,967 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:16:21,863 : WARN  : comm-pool-thread-2 :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:17:26,181 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:17:31,298 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:17:34,474 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:17:40,743 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:17:41,005 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:20:39,285 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:20:39,716 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:23:19,875 : WARN  : ModalContext :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:23:19,884 : WARN  : ModalContext :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:28:36,334 : WARN  : ModalContext :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:28:36,347 : WARN  : ModalContext :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:30:49,539 : WARN  : comm-pool-thread-2 :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:31:35,899 : WARN  : KNIME-Worker-10-Document Vector 3:18 :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:31:39,506 : WARN  : KNIME-Worker-16-Partitioning 3:12 :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:38:06,741 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:38:08,367 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:38:29,717 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:38:31,110 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:38:38,565 : WARN  : comm-pool-thread-5 :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:39:33,418 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:39:33,808 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:42:16,728 : WARN  : KNIME-Worker-24-Document Vector 3:18 :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:42:21,992 : WARN  : KNIME-Worker-28-Partitioning 3:12 :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-25 00:42:28,841 : WARN  : comm-pool-thread-5 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:42:28,842 : WARN  : comm-pool-thread-5 :  : Node : Naive Bayes Predictor : 3:14 : The following input columns are unknown and will be skipped: Document Vector
+2025-05-25 00:42:28,843 : WARN  : comm-pool-thread-5 :  : Node : Naive Bayes Predictor : 3:14 : The following attributes are missing in the input data: overall, Sentiment, Term
+2025-05-25 00:42:28,849 : WARN  : comm-pool-thread-5 :  : Node : Pie Chart : 3:15 : The selected category column "id" does not exist in the table
+2025-05-25 00:42:40,872 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:42:40,874 : WARN  : main :  : Node : Naive Bayes Predictor : 3:14 : The following input columns are unknown and will be skipped: Document Vector
+2025-05-25 00:42:40,875 : WARN  : main :  : Node : Naive Bayes Predictor : 3:14 : The following attributes are missing in the input data: overall, reviewText, Term
+2025-05-25 00:42:40,876 : WARN  : main :  : Node : Pie Chart : 3:15 : The selected category column "id" does not exist in the table
+2025-05-25 00:42:41,136 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:42:41,138 : WARN  : main :  : Node : Naive Bayes Predictor : 3:14 : The following input columns are unknown and will be skipped: Document Vector
+2025-05-25 00:42:41,139 : WARN  : main :  : Node : Naive Bayes Predictor : 3:14 : The following attributes are missing in the input data: overall, reviewText, Term
+2025-05-25 00:42:41,140 : WARN  : main :  : Node : Pie Chart : 3:15 : The selected category column "id" does not exist in the table
+2025-05-25 00:42:42,372 : ERROR : KNIME-Worker-35-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : Execute failed: Missing class value found in row Row40 to skip missing values tick the box in the dialog
+org.knime.core.node.InvalidSettingsException: Missing class value found in row Row40 to skip missing values tick the box in the dialog
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.updateModel(NaiveBayesModel.java:397)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.createModel(NaiveBayesModel.java:364)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.<init>(NaiveBayesModel.java:239)
+	at org.knime.base.node.mine.bayes.naivebayes.learner3.NaiveBayesLearnerNodeModel3.execute(NaiveBayesLearnerNodeModel3.java:365)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-05-25 00:42:42,378 : WARN  : KNIME-Worker-35-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:42:42,379 : WARN  : KNIME-Worker-35-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Predictor : 3:14 : The following input columns are unknown and will be skipped: Document Vector
+2025-05-25 00:42:42,380 : WARN  : KNIME-Worker-35-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Predictor : 3:14 : The following attributes are missing in the input data: overall, reviewText, Term
+2025-05-25 00:42:42,383 : WARN  : KNIME-Worker-35-Naive Bayes Learner 3:13 :  : Node : Pie Chart : 3:15 : The selected category column "id" does not exist in the table
+2025-05-25 00:42:43,316 : ERROR : Thread-16885 :  : KnimeBrowserView :  :  : %cerror%c Error captured hook ::  
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-25 00:43:02,089 : WARN  : comm-pool-thread-5 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:43:04,224 : WARN  : KNIME-Worker-25-Partitioning 3:12 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:43:05,869 : ERROR : KNIME-Worker-31-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : Execute failed: Missing class value found in row Row40 to skip missing values tick the box in the dialog
+org.knime.core.node.InvalidSettingsException: Missing class value found in row Row40 to skip missing values tick the box in the dialog
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.updateModel(NaiveBayesModel.java:397)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.createModel(NaiveBayesModel.java:364)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.<init>(NaiveBayesModel.java:239)
+	at org.knime.base.node.mine.bayes.naivebayes.learner3.NaiveBayesLearnerNodeModel3.execute(NaiveBayesLearnerNodeModel3.java:365)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-05-25 00:43:05,871 : WARN  : KNIME-Worker-31-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:43:12,385 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:43:12,736 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:44:05,813 : ERROR : KNIME-Worker-40-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : Execute failed: Class attribute has too many unique values. To avoid this exception increase the maximum number of allowed nominal values in the node dialog
+org.knime.core.node.InvalidSettingsException: Class attribute has too many unique values. To avoid this exception increase the maximum number of allowed nominal values in the node dialog
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.updateModel(NaiveBayesModel.java:410)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.createModel(NaiveBayesModel.java:364)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.<init>(NaiveBayesModel.java:239)
+	at org.knime.base.node.mine.bayes.naivebayes.learner3.NaiveBayesLearnerNodeModel3.execute(NaiveBayesLearnerNodeModel3.java:365)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-05-25 00:44:05,814 : WARN  : KNIME-Worker-40-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:44:06,603 : ERROR : KNIME-Worker-41-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : Execute failed: Class attribute has too many unique values. To avoid this exception increase the maximum number of allowed nominal values in the node dialog
+org.knime.core.node.InvalidSettingsException: Class attribute has too many unique values. To avoid this exception increase the maximum number of allowed nominal values in the node dialog
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.updateModel(NaiveBayesModel.java:410)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.createModel(NaiveBayesModel.java:364)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.<init>(NaiveBayesModel.java:239)
+	at org.knime.base.node.mine.bayes.naivebayes.learner3.NaiveBayesLearnerNodeModel3.execute(NaiveBayesLearnerNodeModel3.java:365)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-05-25 00:44:06,605 : WARN  : KNIME-Worker-41-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:44:06,768 : ERROR : KNIME-Worker-42-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : Execute failed: Class attribute has too many unique values. To avoid this exception increase the maximum number of allowed nominal values in the node dialog
+org.knime.core.node.InvalidSettingsException: Class attribute has too many unique values. To avoid this exception increase the maximum number of allowed nominal values in the node dialog
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.updateModel(NaiveBayesModel.java:410)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.createModel(NaiveBayesModel.java:364)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.<init>(NaiveBayesModel.java:239)
+	at org.knime.base.node.mine.bayes.naivebayes.learner3.NaiveBayesLearnerNodeModel3.execute(NaiveBayesLearnerNodeModel3.java:365)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-05-25 00:44:06,769 : WARN  : KNIME-Worker-42-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:44:07,061 : ERROR : KNIME-Worker-43-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : Execute failed: Class attribute has too many unique values. To avoid this exception increase the maximum number of allowed nominal values in the node dialog
+org.knime.core.node.InvalidSettingsException: Class attribute has too many unique values. To avoid this exception increase the maximum number of allowed nominal values in the node dialog
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.updateModel(NaiveBayesModel.java:410)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.createModel(NaiveBayesModel.java:364)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.<init>(NaiveBayesModel.java:239)
+	at org.knime.base.node.mine.bayes.naivebayes.learner3.NaiveBayesLearnerNodeModel3.execute(NaiveBayesLearnerNodeModel3.java:365)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-05-25 00:44:07,063 : WARN  : KNIME-Worker-43-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:44:07,243 : ERROR : KNIME-Worker-44-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : Execute failed: Class attribute has too many unique values. To avoid this exception increase the maximum number of allowed nominal values in the node dialog
+org.knime.core.node.InvalidSettingsException: Class attribute has too many unique values. To avoid this exception increase the maximum number of allowed nominal values in the node dialog
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.updateModel(NaiveBayesModel.java:410)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.createModel(NaiveBayesModel.java:364)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.<init>(NaiveBayesModel.java:239)
+	at org.knime.base.node.mine.bayes.naivebayes.learner3.NaiveBayesLearnerNodeModel3.execute(NaiveBayesLearnerNodeModel3.java:365)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-05-25 00:44:07,244 : WARN  : KNIME-Worker-44-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:44:14,321 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:44:15,710 : ERROR : KNIME-Worker-45-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : Execute failed: Class attribute has too many unique values. To avoid this exception increase the maximum number of allowed nominal values in the node dialog
+org.knime.core.node.InvalidSettingsException: Class attribute has too many unique values. To avoid this exception increase the maximum number of allowed nominal values in the node dialog
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.updateModel(NaiveBayesModel.java:410)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.createModel(NaiveBayesModel.java:364)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.<init>(NaiveBayesModel.java:239)
+	at org.knime.base.node.mine.bayes.naivebayes.learner3.NaiveBayesLearnerNodeModel3.execute(NaiveBayesLearnerNodeModel3.java:365)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-05-25 00:44:15,711 : WARN  : KNIME-Worker-45-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:45:40,144 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:45:40,802 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:45:42,729 : WARN  : KNIME-Worker-46-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : The following attributes are skipped: reviewText/Too many values
+2025-05-25 00:45:54,042 : WARN  : comm-pool-thread-5 :  : Node : Pie Chart : 3:15 : The selected category column "id" does not exist in the table
+2025-05-25 00:45:57,741 : WARN  : KNIME-Worker-47-Naive Bayes Predictor 3:14 :  : Node : Pie Chart : 3:15 : The selected category column "id" does not exist in the table
+2025-05-25 00:47:16,325 : WARN  : comm-pool-thread-8 :  : Node : Pie Chart : 3:15 : The selected category column "id" does not exist in the table
+2025-05-25 00:49:20,455 : ERROR : KNIME-Worker-51 :  : ThreadPool :  :  : An exception occurred while executing a runnable.
+org.knime.core.webui.node.dialog.defaultdialog.widget.handler.WidgetHandlerException: No column domain values present for column "reviewText". Consider using a Domain Calculator node.
+	at org.knime.core.webui.node.dialog.defaultdialog.widget.choices.DomainChoicesUtil.getChoicesByContextAndColumn(DomainChoicesUtil.java:89)
+	at org.knime.core.webui.node.dialog.defaultdialog.widget.choices.DomainChoicesUpdateHandler.update(DomainChoicesUpdateHandler.java:67)
+	at org.knime.core.webui.node.dialog.defaultdialog.widget.choices.DomainChoicesUpdateHandler.update(DomainChoicesUpdateHandler.java:1)
+	at org.knime.core.webui.node.dialog.defaultdialog.widget.UpdateHandler.castAndUpdate(UpdateHandler.java:82)
+	at org.knime.core.webui.node.dialog.defaultdialog.dataservice.DefaultNodeDialogDataServiceImpl.lambda$3(DefaultNodeDialogDataServiceImpl.java:158)
+	at org.knime.core.util.ThreadUtils$CallableWithContextImpl.callWithContext(ThreadUtils.java:385)
+	at org.knime.core.util.ThreadUtils$CallableWithContext.call(ThreadUtils.java:271)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-05-25 00:51:58,955 : WARN  : comm-pool-thread-8 :  : Node : Scorer : 3:22 : No columns selected yet.
+2025-05-25 00:52:18,899 : WARN  : KNIME-Worker-54-Scorer 3:22 :  : Node : Scorer : 3:22 : There were missing values in the reference or in the prediction class columns.
+2025-05-25 00:55:07,247 : WARN  : comm-pool-thread-8 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:55:08,983 : WARN  : comm-pool-thread-8 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:55:13,503 : WARN  : KNIME-Worker-60-Table Manipulator 3:2 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:55:15,933 : WARN  : KNIME-Worker-64-Strings to Document 3:6 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:55:17,396 : WARN  : KNIME-Worker-59-Punctuation Erasure 3:8 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:55:18,875 : WARN  : KNIME-Worker-58-Stop Word Filter 3:10 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:55:20,317 : WARN  : KNIME-Worker-57-Number Filter 3:9 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:55:20,821 : WARN  : KNIME-Worker-56-Bag Of Words Creator 3:11 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:55:21,206 : WARN  : KNIME-Worker-59-Partitioning 3:12 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:55:21,401 : WARN  : KNIME-Worker-58-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : The following attributes are skipped: reviewText/Too many values
+2025-05-25 00:55:21,587 : WARN  : KNIME-Worker-63-Scorer 3:22 :  : Node : Scorer : 3:22 : There were missing values in the reference or in the prediction class columns.
+2025-05-25 00:55:49,876 : ERROR : Thread-42706 :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:18 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:19, 3:20, 3:21, 3:22] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-25 00:55:49,886 : ERROR : Thread-42708 :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-25 00:55:49,890 : ERROR : Thread-42710 :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:18 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:19, 3:20, 3:21, 3:22] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 45)
+2025-05-25 00:56:26,101 : WARN  : comm-pool-thread-8 :  : Node : Pie Chart : 3:15 : The selected category column "Sentiment" does not exist in the table
+2025-05-25 00:56:54,743 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:56:55,469 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:56:57,694 : WARN  : comm-pool-thread-8 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:57:00,882 : WARN  : KNIME-Worker-75-Table Manipulator 3:2 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:57:04,840 : WARN  : KNIME-Worker-79-Strings to Document 3:6 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:57:07,645 : WARN  : KNIME-Worker-76-Punctuation Erasure 3:8 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:57:09,898 : WARN  : KNIME-Worker-86-Stop Word Filter 3:10 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:57:11,573 : WARN  : KNIME-Worker-81-Number Filter 3:9 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:57:12,272 : WARN  : KNIME-Worker-73-Bag Of Words Creator 3:11 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:57:12,768 : WARN  : KNIME-Worker-85-Partitioning 3:12 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-25 00:57:12,840 : WARN  : KNIME-Worker-79-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : The following attributes are skipped: reviewText/Too many values
+2025-05-25 00:57:12,974 : WARN  : KNIME-Worker-87-Scorer 3:22 :  : Node : Scorer : 3:22 : There were missing values in the reference or in the prediction class columns.
+2025-05-25 00:57:12,979 : WARN  : KNIME-Worker-87-Scorer 3:22 :  : Node : Pie Chart : 3:15 : The selected category column "Sentiment" does not exist in the table
