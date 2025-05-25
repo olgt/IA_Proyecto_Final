@@ -1,0 +1,64 @@
+{
+    "version": "5.4.4.v202504301443",
+    "created": "2025-05-25 02:58",
+    "nodestats": {
+        "nodes": [
+            {
+                "id": "org.knime.base.node.io.filehandling.csv.reader.CSVTableReaderNodeFactory",
+                "nodename": "CSV Reader",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 2339,
+                "nrcreated": 1,
+                "nrsettingsChanged": 2,
+                "successor": "org.knime.base.node.preproc.manipulator.TableManipulatorNodeFactory",
+                "successornodename": "Table Manipulator"
+            },
+            {
+                "id": "org.knime.base.node.preproc.manipulator.TableManipulatorNodeFactory",
+                "nodename": "Table Manipulator",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 441,
+                "nrcreated": 1,
+                "nrsettingsChanged": 3,
+                "successor": "org.knime.base.node.rules.engine.RuleEngineNodeFactory",
+                "successornodename": "Rule Engine"
+            },
+            {
+                "id": "org.knime.base.node.rules.engine.RuleEngineNodeFactory",
+                "nodename": "Rule Engine",
+                "nrexecs": 0,
+                "nrfails": 0,
+                "exectime": 0,
+                "nrcreated": 1,
+                "nrsettingsChanged": 0,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            }
+        ],
+        "metaNodes": {
+        },
+        "wrappedNodes": {
+        },
+        "createdVia": {
+            "WEB_UI": 3
+        }
+    },
+    "uptime": 4779643,
+    "workflowsOpened": 1,
+    "remoteWorkflowsOpened": 0,
+    "workflowsCreated": 1,
+    "remoteWorkflowsCreated": 0,
+    "columnarStorageWorkflowsOpened": 0,
+    "workflowsImported": 0,
+    "workflowsExported": 0,
+    "webUIPerspectiveSwitches": 0,
+    "javaUIPerspectiveSwitches": 0,
+    "lastUsedPerspective": "none",
+    "launches": 1,
+    "lastApplicationID": "org.knime.product.KNIME_APPLICATION",
+    "timeSinceLastStart": 4779643,
+    "crashes": 0,
+    "properlyShutDown": false
+}
