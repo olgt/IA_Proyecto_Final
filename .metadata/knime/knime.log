@@ -888,3 +888,1440 @@ org.knime.core.webui.node.dialog.defaultdialog.widget.handler.WidgetHandlerExcep
 2025-05-25 00:57:12,840 : WARN  : KNIME-Worker-79-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : The following attributes are skipped: reviewText/Too many values
 2025-05-25 00:57:12,974 : WARN  : KNIME-Worker-87-Scorer 3:22 :  : Node : Scorer : 3:22 : There were missing values in the reference or in the prediction class columns.
 2025-05-25 00:57:12,979 : WARN  : KNIME-Worker-87-Scorer 3:22 :  : Node : Pie Chart : 3:15 : The selected category column "Sentiment" does not exist in the table
+2025-05-27 22:15:35,363 : WARN  : ModalContext :  : Node : Naive Bayes Learner : 3:13 : The following attributes are skipped: reviewText/Too many values
+2025-05-27 22:15:36,283 : WARN  : ModalContext :  : Node : Scorer : 3:22 : There were missing values in the reference or in the prediction class columns.
+2025-05-27 22:48:16,549 : WARN  : AWT-EventQueue-0 :  : ColumnHandlingFactorySelectionPanel : Missing Value : 3:5 : get warnings during panel validation: [Some columns no longer exist (red bordered)]
+2025-05-27 22:54:12,992 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-27 22:54:14,234 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-27 22:54:37,208 : WARN  : KNIME-Worker-1-Strings to Document 3:6 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-27 22:54:40,867 : WARN  : KNIME-Worker-4-Punctuation Erasure 3:8 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-27 22:54:43,430 : WARN  : KNIME-Worker-8-Stop Word Filter 3:10 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-27 22:54:45,702 : WARN  : KNIME-Worker-7-Number Filter 3:9 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-27 22:54:46,994 : WARN  : KNIME-Worker-8-Bag Of Words Creator 3:11 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-27 22:54:48,254 : WARN  : KNIME-Worker-9-Partitioning 3:12 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-27 22:54:48,553 : WARN  : KNIME-Worker-17-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : The following attributes are skipped: reviewText/Too many values
+2025-05-27 23:02:41,031 : ERROR : ServerSpace Update Timer :  : UpdateManager :  :  : Server oscar_dariel_lo@api.hub.knime.com cache update failed - logging out.
+org.knime.core.util.exception.RuntimeResourceAccessException: 500 An error occurred while fetching the current account's identity: An internal error occurred. (Error ID: 'error_fefdb891-764b-4d50-983a-ce0b8c9a38ac')
+
+	at org.knime.core.util.exception.RuntimeResourceAccessException.from(RuntimeResourceAccessException.java:84)
+	at org.knime.core.util.exception.HttpExceptionUtils.returnWithRuntimeException(HttpExceptionUtils.java:116)
+	at com.knime.enterprise.client.rest.RestServerContent.refreshFetchers(RestServerContent.java:747)
+	at com.knime.enterprise.client.rest.RestServerContent.updateContentCache(RestServerContent.java:689)
+	at com.knime.enterprise.client.rest.RestServerContent.updateCacheOnNewContent(RestServerContent.java:1022)
+	at com.knime.explorer.server.internal.UpdateManager$1.run(UpdateManager.java:116)
+	at java.base/java.util.TimerThread.mainLoop(Unknown Source)
+	at java.base/java.util.TimerThread.run(Unknown Source)
+Caused by: org.knime.core.util.exception.ServerErrorAccessException: 500 An error occurred while fetching the current account's identity: An internal error occurred. (Error ID: 'error_fefdb891-764b-4d50-983a-ce0b8c9a38ac')
+
+	at org.knime.core.util.exception.HttpExceptionUtils.wrapException(HttpExceptionUtils.java:90)
+	at com.knime.enterprise.client.rest.HubContent.getCurrentAccountIdentity(HubContent.java:667)
+	at com.knime.enterprise.client.rest.HubContent.getRepositoryRootEndpoints(HubContent.java:451)
+	at org.knime.core.util.exception.HttpExceptionUtils.returnWithRuntimeException(HttpExceptionUtils.java:114)
+	... 6 more
+2025-05-27 23:02:41,779 : ERROR : ForkJoinPool.commonPool-worker-5 :  : HubSpaceProviders$HubSpaceProvider :  :  : Problem fetching hub spaces for 'My-KNIME-Hub'
+org.knime.core.util.exception.ClientErrorAccessException: 404 An error occurred while accessing item '/knime/rest/v4/repository/Users/oscar_dariel_lo': No item found at path '/Users/account:user:a5352a20-f46d-4747-aee7-6d83dbc68486'.
+	at org.knime.core.util.exception.HttpExceptionUtils.wrapException(HttpExceptionUtils.java:85)
+	at com.knime.explorer.server.internal.APRestFacade.fetchRepositoryItem(APRestFacade.java:214)
+	at com.knime.explorer.server.internal.APRestFacade.fetchRepositoryItem(APRestFacade.java:194)
+	at com.knime.explorer.server.internal.APHubFacade.listGroups(APHubFacade.java:111)
+	at com.knime.explorer.server.internal.HubSpaceProviders$HubSpaceProvider$HubSpaceProviderConnection.fetchGroupsFromHub(HubSpaceProviders.java:283)
+	at com.knime.explorer.server.internal.HubSpaceProviders$HubSpaceProvider$HubSpaceProviderConnection.updateSpaceMap(HubSpaceProviders.java:239)
+	at com.knime.explorer.server.internal.HubSpaceProviders$HubSpaceProvider.lambda$5(HubSpaceProviders.java:133)
+	at java.base/java.util.Optional.map(Unknown Source)
+	at com.knime.explorer.server.internal.HubSpaceProviders$HubSpaceProvider.toEntity(HubSpaceProviders.java:133)
+	at org.knime.gateway.impl.util.NetworkExceptions.lambda$0(NetworkExceptions.java:148)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+2025-05-28 00:30:54,858 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-28 00:30:54,867 : WARN  : main :  : Node : Scorer : 3:22 : Column 'Prediction (Sentiment)' not found.
+2025-05-28 00:30:55,778 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-28 00:30:55,781 : WARN  : main :  : Node : Scorer : 3:22 : Column 'Prediction (Sentiment)' not found.
+2025-05-28 00:31:04,574 : ERROR : KNIME-Worker-19-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : Execute failed: Class attribute has too many unique values. To avoid this exception increase the maximum number of allowed nominal values in the node dialog
+org.knime.core.node.InvalidSettingsException: Class attribute has too many unique values. To avoid this exception increase the maximum number of allowed nominal values in the node dialog
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.updateModel(NaiveBayesModel.java:410)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.createModel(NaiveBayesModel.java:364)
+	at org.knime.base.node.mine.bayes.naivebayes.datamodel3.NaiveBayesModel.<init>(NaiveBayesModel.java:239)
+	at org.knime.base.node.mine.bayes.naivebayes.learner3.NaiveBayesLearnerNodeModel3.execute(NaiveBayesLearnerNodeModel3.java:365)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-05-28 00:31:04,578 : WARN  : KNIME-Worker-19-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-28 00:31:04,590 : WARN  : KNIME-Worker-19-Naive Bayes Learner 3:13 :  : Node : Scorer : 3:22 : Column 'Prediction (Sentiment)' not found.
+2025-05-28 00:31:25,290 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-28 00:31:25,802 : WARN  : main :  : Node : Naive Bayes Learner : 3:13 : The following columns are not supported and thus will be ignored: Document, Term
+2025-05-28 00:31:27,061 : WARN  : KNIME-Worker-20-Naive Bayes Learner 3:13 :  : Node : Naive Bayes Learner : 3:13 : The following attributes are skipped: reviewText/Too many values
+2025-05-28 00:35:22,066 : WARN  : comm-pool-thread-10 :  : Node : Document Vector : 3:24 : Auto guessing: Using column 'Document' as DocumentValue column.
+2025-05-28 00:36:03,156 : WARN  : comm-pool-thread-10 :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-28 00:36:07,068 : ERROR : Thread-52714 :  : KnimeBrowserView :  :  : %cerror%c Error captured hook ::  
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 00:39:14,797 : WARN  : KNIME-Worker-21-Document Vector 3:24 :  : Node : Document Vector : 3:24 : Execution canceled
+2025-05-28 00:41:22,923 : WARN  : KNIME-Worker-23-Document Vector 3:24 :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-28 00:51:32,304 : ERROR : Clear OSGi configuration :  : InvokeInstallSiteAction :  :  : Could not clean OSGi configuration area: C:\Users\olgt1\AppData\Local\Programs\KNIME\configuration\org.eclipse.osgi\315\0\.cp\os\win32\x86_64\localfile_1_0_0.dll
+2025-05-28 08:45:28,240 : WARN  : ModalContext :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-28 08:45:28,256 : WARN  : ModalContext :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-28 08:52:14,601 : ERROR : Thread-4290 :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:25 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:19, 3:21, 3:22, 3:23, 3:24, 3:26] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 08:52:14,611 : ERROR : Thread-4292 :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 08:52:14,611 : ERROR : Thread-4294 :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:25 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:19, 3:21, 3:22, 3:23, 3:24, 3:26] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 45)
+2025-05-28 08:52:20,320 : WARN  : comm-pool-thread-2 :  : Node : Category to Class : 3:26 : Auto guessing: Using column 'Document' as DocumentValue column.
+2025-05-28 08:53:49,214 : WARN  : comm-pool-thread-2 :  : Node : Strings to Document : 3:27 : Can't create new column 'Document' as input spec already contains a column with this name!
+2025-05-28 08:54:03,928 : WARN  : main :  : WrappedNodeDialog : Strings to Document : 3:27 : failed to apply settings: Can't create new column "Document" as input spec already contains a column with this name!
+org.knime.core.node.InvalidSettingsException: Can't create new column "Document" as input spec already contains a column with this name!
+	at org.knime.ext.textprocessing.nodes.transformation.stringstodocument.StringsToDocumentNodeDialog2.saveAdditionalSettingsTo(StringsToDocumentNodeDialog2.java:461)
+	at org.knime.core.node.defaultnodesettings.DefaultNodeSettingsPane.saveSettingsTo(DefaultNodeSettingsPane.java:293)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:553)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:792)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2025-05-28 08:54:13,518 : WARN  : main :  : WrappedNodeDialog : Strings to Document : 3:27 : failed to apply settings: Can't create new column "Document" as input spec already contains a column with this name!
+org.knime.core.node.InvalidSettingsException: Can't create new column "Document" as input spec already contains a column with this name!
+	at org.knime.ext.textprocessing.nodes.transformation.stringstodocument.StringsToDocumentNodeDialog2.saveAdditionalSettingsTo(StringsToDocumentNodeDialog2.java:461)
+	at org.knime.core.node.defaultnodesettings.DefaultNodeSettingsPane.saveSettingsTo(DefaultNodeSettingsPane.java:293)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:553)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:792)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2025-05-28 08:54:26,166 : WARN  : main :  : WrappedNodeDialog : Strings to Document : 3:27 : failed to apply settings: Can't create new column "Document" as input spec already contains a column with this name!
+org.knime.core.node.InvalidSettingsException: Can't create new column "Document" as input spec already contains a column with this name!
+	at org.knime.ext.textprocessing.nodes.transformation.stringstodocument.StringsToDocumentNodeDialog2.saveAdditionalSettingsTo(StringsToDocumentNodeDialog2.java:461)
+	at org.knime.core.node.defaultnodesettings.DefaultNodeSettingsPane.saveSettingsTo(DefaultNodeSettingsPane.java:293)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:553)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:792)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2025-05-28 08:54:51,618 : WARN  : main :  : WrappedNodeDialog : Strings to Document : 3:27 : failed to apply settings: Can't create new column "Document" as input spec already contains a column with this name!
+org.knime.core.node.InvalidSettingsException: Can't create new column "Document" as input spec already contains a column with this name!
+	at org.knime.ext.textprocessing.nodes.transformation.stringstodocument.StringsToDocumentNodeDialog2.saveAdditionalSettingsTo(StringsToDocumentNodeDialog2.java:461)
+	at org.knime.core.node.defaultnodesettings.DefaultNodeSettingsPane.saveSettingsTo(DefaultNodeSettingsPane.java:293)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:553)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:792)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2025-05-28 08:54:58,130 : WARN  : main :  : WrappedNodeDialog : Strings to Document : 3:27 : failed to apply settings: Can't create new column "Document" as input spec already contains a column with this name!
+org.knime.core.node.InvalidSettingsException: Can't create new column "Document" as input spec already contains a column with this name!
+	at org.knime.ext.textprocessing.nodes.transformation.stringstodocument.StringsToDocumentNodeDialog2.saveAdditionalSettingsTo(StringsToDocumentNodeDialog2.java:461)
+	at org.knime.core.node.defaultnodesettings.DefaultNodeSettingsPane.saveSettingsTo(DefaultNodeSettingsPane.java:293)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:553)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:792)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2025-05-28 08:55:08,361 : WARN  : main :  : WrappedNodeDialog : Strings to Document : 3:27 : failed to apply settings: Can't create new column "Document" as input spec already contains a column with this name!
+org.knime.core.node.InvalidSettingsException: Can't create new column "Document" as input spec already contains a column with this name!
+	at org.knime.ext.textprocessing.nodes.transformation.stringstodocument.StringsToDocumentNodeDialog2.saveAdditionalSettingsTo(StringsToDocumentNodeDialog2.java:461)
+	at org.knime.core.node.defaultnodesettings.DefaultNodeSettingsPane.saveSettingsTo(DefaultNodeSettingsPane.java:293)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:553)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:792)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2025-05-28 08:55:21,481 : WARN  : main :  : WrappedNodeDialog : Strings to Document : 3:27 : failed to apply settings: Can't create new column "Document" as input spec already contains a column with this name!
+org.knime.core.node.InvalidSettingsException: Can't create new column "Document" as input spec already contains a column with this name!
+	at org.knime.ext.textprocessing.nodes.transformation.stringstodocument.StringsToDocumentNodeDialog2.saveAdditionalSettingsTo(StringsToDocumentNodeDialog2.java:461)
+	at org.knime.core.node.defaultnodesettings.DefaultNodeSettingsPane.saveSettingsTo(DefaultNodeSettingsPane.java:293)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:553)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:792)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2025-05-28 08:58:17,211 : ERROR : comm-pool-thread-2 :  : Node : Table Manipulator : 3:29 : Configure failed (IllegalArgumentException): Duplicate column name "reviewTextDoc" at positions 3 and 4.
+java.lang.IllegalArgumentException: Duplicate column name "reviewTextDoc" at positions 3 and 4.
+	at org.knime.core.data.DataTableSpec.<init>(DataTableSpec.java:501)
+	at org.knime.core.data.DataTableSpec.<init>(DataTableSpec.java:471)
+	at org.knime.core.data.DataTableSpec.<init>(DataTableSpec.java:428)
+	at org.knime.filehandling.core.node.table.reader.selector.TableTransformationUtils.toDataTableSpec(TableTransformationUtils.java:96)
+	at org.knime.filehandling.core.node.table.reader.config.tablespec.DefaultTableSpecConfig.getDataTableSpec(DefaultTableSpecConfig.java:183)
+	at org.knime.filehandling.core.node.table.reader.DefaultMultiTableRead.<init>(DefaultMultiTableRead.java:134)
+	at org.knime.filehandling.core.node.table.reader.DefaultStagedMultiTableRead.createMultiTableRead(DefaultStagedMultiTableRead.java:193)
+	at org.knime.filehandling.core.node.table.reader.DefaultStagedMultiTableRead.withTransformation(DefaultStagedMultiTableRead.java:185)
+	at org.knime.filehandling.core.node.table.reader.DefaultStagedMultiTableRead.withoutTransformation(DefaultStagedMultiTableRead.java:170)
+	at org.knime.filehandling.core.node.table.reader.MultiTableReader.createTableSpecConfig(MultiTableReader.java:148)
+	at org.knime.base.node.preproc.manipulator.TableManipulatorNodeModel.configure(TableManipulatorNodeModel.java:154)
+	at org.knime.core.node.NodeModel.configureModel(NodeModel.java:1139)
+	at org.knime.core.node.Node.invokeNodeModelConfigure(Node.java:2025)
+	at org.knime.core.node.Node.configure(Node.java:1968)
+	at org.knime.core.node.workflow.NativeNodeContainer.performConfigure(NativeNodeContainer.java:574)
+	at org.knime.core.node.workflow.SingleNodeContainer.callNodeConfigure(SingleNodeContainer.java:315)
+	at org.knime.core.node.workflow.SingleNodeContainer.configure(SingleNodeContainer.java:200)
+	at org.knime.core.node.workflow.WorkflowManager.configureSingleNodeContainer(WorkflowManager.java:6850)
+	at org.knime.core.node.workflow.WorkflowManager.configureNodeAndPortSuccessors(WorkflowManager.java:7031)
+	at org.knime.core.node.workflow.WorkflowManager.configureNodeAndSuccessors(WorkflowManager.java:6964)
+	at org.knime.core.node.workflow.WorkflowManager.resetAndConfigureNodeAndSuccessors(WorkflowManager.java:5562)
+	at org.knime.core.node.workflow.WorkflowManager.resetAndConfigureNode(WorkflowManager.java:5467)
+	at org.knime.core.node.workflow.WorkflowManager.addConnection(WorkflowManager.java:1450)
+	at org.knime.core.node.workflow.WorkflowManager.addConnection(WorkflowManager.java:1366)
+	at org.knime.gateway.impl.webui.service.commands.util.NodeConnector.connect(NodeConnector.java:276)
+	at org.knime.gateway.impl.webui.service.commands.Connect.executeWithLockedWorkflow(Connect.java:94)
+	at org.knime.gateway.impl.webui.service.commands.AbstractWorkflowCommand.execute(AbstractWorkflowCommand.java:76)
+	at org.knime.gateway.impl.webui.service.commands.WorkflowCommands.executeCommandAndModifyCommandStacks(WorkflowCommands.java:289)
+	at org.knime.gateway.impl.webui.service.commands.WorkflowCommands.execute(WorkflowCommands.java:177)
+	at org.knime.gateway.impl.webui.service.DefaultWorkflowService.executeWorkflowCommand(DefaultWorkflowService.java:167)
+	at org.knime.gateway.impl.webui.jsonrpc.service.JsonRpcWorkflowServiceWrapper.executeWorkflowCommand(JsonRpcWorkflowServiceWrapper.java:92)
+	at jdk.internal.reflect.GeneratedMethodAccessor171.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.invoke(JsonRpcBasicServer.java:478)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleObject(JsonRpcBasicServer.java:349)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleJsonNodeRequest(JsonRpcBasicServer.java:274)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleRequest(JsonRpcBasicServer.java:242)
+	at org.knime.gateway.impl.jsonrpc.JsonRpcRequestHandler.handle(JsonRpcRequestHandler.java:104)
+	at org.knime.ui.java.browser.lifecycle.Init.lambda$13(Init.java:290)
+	at com.equo.comm.common.MessageHandler.processReceivedEventMessage(MessageHandler.java:131)
+	at com.equo.comm.ee.provider.service.ChromiumService.receiveMessage(ChromiumService.java:98)
+	at com.equo.comm.ee.provider.CommunicationManagerChromiumImpl.receiveMessage(CommunicationManagerChromiumImpl.java:48)
+	at com.equo.chromium.swt.internal.spi.CommRouterHandler.handleRequest(CommRouterHandler.java:33)
+	at com.equo.chromium.swt.internal.spi.CommRouterHandler.lambda$1(CommRouterHandler.java:51)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025-05-28 08:58:30,186 : WARN  : main :  : Node : Stop Word Filter : 3:10 : Selected document column "Document" could not be found in the input data table.
+2025-05-28 08:58:30,444 : WARN  : main :  : Node : Stop Word Filter : 3:10 : Selected document column "Document" could not be found in the input data table.
+2025-05-28 08:58:40,960 : WARN  : KNIME-Worker-16-Table Manipulator 3:29 :  : Node : Stop Word Filter : 3:10 : Selected document column "Document" could not be found in the input data table.
+2025-05-28 08:58:44,912 : WARN  : main :  : Node : Stop Word Filter : 3:10 : Selected document column "Document" could not be found in the input data table.
+2025-05-28 08:58:45,184 : WARN  : main :  : Node : Stop Word Filter : 3:10 : Selected document column "Document" could not be found in the input data table.
+2025-05-28 08:58:46,990 : WARN  : KNIME-Worker-11-Punctuation Erasure 3:8 :  : Node : Stop Word Filter : 3:10 : Selected document column "Document" could not be found in the input data table.
+2025-05-28 08:58:56,231 : WARN  : main :  : Node : Number Filter : 3:9 : Selected document column "Document" could not be found in the input data table.
+2025-05-28 08:58:56,631 : WARN  : main :  : Node : Number Filter : 3:9 : Selected document column "Document" could not be found in the input data table.
+2025-05-28 08:58:59,018 : WARN  : KNIME-Worker-10-Stop Word Filter 3:10 :  : Node : Number Filter : 3:9 : Selected document column "Document" could not be found in the input data table.
+2025-05-28 08:59:03,696 : WARN  : main :  : Node : Bag Of Words Creator : 3:11 : DocumentValue column 'Document' could not be found in data table.
+2025-05-28 08:59:03,920 : WARN  : main :  : Node : Bag Of Words Creator : 3:11 : DocumentValue column 'Document' could not be found in data table.
+2025-05-28 08:59:05,889 : WARN  : KNIME-Worker-9-Number Filter 3:9 :  : Node : Bag Of Words Creator : 3:11 : DocumentValue column 'Document' could not be found in data table.
+2025-05-28 08:59:27,847 : WARN  : main :  : Node : Category to Class : 3:26 : DocumentValue column 'Document' could not be found in data table.
+2025-05-28 08:59:28,200 : WARN  : main :  : Node : Category to Class : 3:26 : DocumentValue column 'Document' could not be found in data table.
+2025-05-28 08:59:30,471 : WARN  : KNIME-Worker-2-Bag Of Words Creator 3:11 :  : Node : Category to Class : 3:26 : DocumentValue column 'Document' could not be found in data table.
+2025-05-28 08:59:47,704 : WARN  : main :  : Node : Category to Class : 3:26 : DocumentValue column 'Document' could not be found in data table.
+2025-05-28 08:59:48,320 : WARN  : main :  : Node : Category to Class : 3:26 : DocumentValue column 'Document' could not be found in data table.
+2025-05-28 08:59:51,506 : WARN  : KNIME-Worker-12-Bag Of Words Creator 3:11 :  : Node : Category to Class : 3:26 : DocumentValue column 'Document' could not be found in data table.
+2025-05-28 09:00:08,770 : WARN  : KNIME-Worker-13-Partitioning 3:12 :  : Node : Category to Class : 3:26 : DocumentValue column 'Document' could not be found in data table.
+2025-05-28 09:00:37,304 : WARN  : comm-pool-thread-2 :  : Node : Document Vector : 3:24 : DocumentValue column 'Document' could not be found in data table.
+2025-05-28 09:07:28,949 : ERROR : Thread-24279 :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 09:07:28,949 : ERROR : Thread-24281 :  : KnimeBrowserView :  :  : Uncaught (in promise) TypeError: Cannot read properties of null (reading 'rowCount') (source: http://org.knime.core.ui.port/uiext/tableview/TableView.js; line: 15187)
+2025-05-28 09:09:08,367 : ERROR : Thread-24857 :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:26 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:19, 3:21, 3:22, 3:23, 3:24, 3:27, 3:28, 3:29] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 09:09:08,373 : ERROR : Thread-24860 :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 09:09:08,374 : ERROR : Thread-24862 :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:26 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:19, 3:21, 3:22, 3:23, 3:24, 3:27, 3:28, 3:29] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 45)
+2025-05-28 09:12:05,420 : WARN  : comm-pool-thread-2 :  : Node : Table Validator : 3:30 : Configuration is missing.
+2025-05-28 09:14:53,551 : ERROR : Thread-29857 :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:31 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:19, 3:21, 3:22, 3:23, 3:24, 3:27, 3:28, 3:29, 3:30] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 09:14:53,553 : ERROR : Thread-29859 :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 09:14:53,555 : ERROR : Thread-29861 :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:31 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:19, 3:21, 3:22, 3:23, 3:24, 3:27, 3:28, 3:29, 3:30] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 45)
+2025-05-28 09:16:23,052 : WARN  : KNIME-Worker-21-Document Vector 3:24 :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-28 09:18:26,048 : WARN  : KNIME-Worker-22-Document Vector 3:24 :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-28 09:20:22,201 : WARN  : comm-pool-thread-2 :  : Node : Document Data Extractor : 3:30 : No data extractors selected
+2025-05-28 09:20:22,209 : WARN  : comm-pool-thread-2 :  : Node : Document Data Extractor : 3:30 : Auto guessing: Using column 'Document' as DocumentValue column.
+2025-05-28 09:22:06,715 : ERROR : Thread-37724 :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:27 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:19, 3:21, 3:22, 3:23, 3:24, 3:28, 3:29, 3:30] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 09:22:06,722 : ERROR : Thread-37726 :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 09:22:06,724 : ERROR : Thread-37728 :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:27 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:19, 3:21, 3:22, 3:23, 3:24, 3:28, 3:29, 3:30] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 45)
+2025-05-28 09:22:09,098 : WARN  : comm-pool-thread-2 :  : Node : Document Vector : 3:24 : DocumentValue column 'SentimentDoc' could not be found in data table.
+2025-05-28 09:22:12,455 : WARN  : main :  : Node : Document Vector : 3:24 : DocumentValue column 'SentimentDoc' could not be found in data table.
+2025-05-28 09:22:12,678 : WARN  : main :  : Node : Document Vector : 3:24 : DocumentValue column 'SentimentDoc' could not be found in data table.
+2025-05-28 09:22:14,332 : WARN  : KNIME-Worker-24-Punctuation Erasure 3:8 :  : Node : Document Vector : 3:24 : DocumentValue column 'SentimentDoc' could not be found in data table.
+2025-05-28 09:22:18,593 : WARN  : main :  : Node : Document Vector : 3:24 : DocumentValue column 'SentimentDoc' could not be found in data table.
+2025-05-28 09:22:18,799 : WARN  : main :  : Node : Document Vector : 3:24 : DocumentValue column 'SentimentDoc' could not be found in data table.
+2025-05-28 09:22:20,313 : WARN  : KNIME-Worker-39-Stop Word Filter 3:10 :  : Node : Document Vector : 3:24 : DocumentValue column 'SentimentDoc' could not be found in data table.
+2025-05-28 09:22:22,108 : WARN  : KNIME-Worker-28-Number Filter 3:9 :  : Node : Document Vector : 3:24 : DocumentValue column 'SentimentDoc' could not be found in data table.
+2025-05-28 09:22:23,814 : WARN  : KNIME-Worker-27-Bag Of Words Creator 3:11 :  : Node : Document Vector : 3:24 : DocumentValue column 'SentimentDoc' could not be found in data table.
+2025-05-28 09:22:25,618 : WARN  : KNIME-Worker-38-Partitioning 3:12 :  : Node : Document Vector : 3:24 : DocumentValue column 'SentimentDoc' could not be found in data table.
+2025-05-28 09:22:38,900 : WARN  : main :  : Node : Document Vector : 3:24 : DocumentValue column 'SentimentDoc' could not be found in data table.
+2025-05-28 09:22:39,550 : WARN  : main :  : Node : Document Vector : 3:24 : DocumentValue column 'SentimentDoc' could not be found in data table.
+2025-05-28 09:22:40,870 : WARN  : KNIME-Worker-25-Bag Of Words Creator 3:11 :  : Node : Document Vector : 3:24 : DocumentValue column 'SentimentDoc' could not be found in data table.
+2025-05-28 09:22:52,284 : WARN  : KNIME-Worker-23-Partitioning 3:12 :  : Node : Document Vector : 3:24 : DocumentValue column 'SentimentDoc' could not be found in data table.
+2025-05-28 09:23:29,120 : WARN  : KNIME-Worker-33-Document Vector 3:24 :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-28 09:25:22,624 : ERROR : Thread-43025 :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:30 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:19, 3:21, 3:22, 3:23, 3:24, 3:28] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 09:25:22,627 : ERROR : Thread-43028 :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 09:25:22,629 : ERROR : Thread-43030 :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:30 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:19, 3:21, 3:22, 3:23, 3:24, 3:28] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 45)
+2025-05-28 09:26:43,684 : WARN  : comm-pool-thread-2 :  : JsonRpcErrorResolver :  :  : An unexpected json rpc error occurred
+java.lang.IllegalStateException: No rpc data service available
+	at org.knime.core.webui.node.DataServiceManager.callRpcDataService(DataServiceManager.java:164)
+	at org.knime.gateway.impl.webui.service.DefaultPortService.callPortDataService(DefaultPortService.java:172)
+	at org.knime.gateway.impl.webui.jsonrpc.service.JsonRpcPortServiceWrapper.callPortDataService(JsonRpcPortServiceWrapper.java:85)
+	at jdk.internal.reflect.GeneratedMethodAccessor183.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.invoke(JsonRpcBasicServer.java:478)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleObject(JsonRpcBasicServer.java:349)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleJsonNodeRequest(JsonRpcBasicServer.java:274)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleRequest(JsonRpcBasicServer.java:242)
+	at org.knime.gateway.impl.jsonrpc.JsonRpcRequestHandler.handle(JsonRpcRequestHandler.java:104)
+	at org.knime.ui.java.browser.lifecycle.Init.lambda$13(Init.java:290)
+	at com.equo.comm.common.MessageHandler.processReceivedEventMessage(MessageHandler.java:131)
+	at com.equo.comm.ee.provider.service.ChromiumService.receiveMessage(ChromiumService.java:98)
+	at com.equo.comm.ee.provider.CommunicationManagerChromiumImpl.receiveMessage(CommunicationManagerChromiumImpl.java:48)
+	at com.equo.chromium.swt.internal.spi.CommRouterHandler.handleRequest(CommRouterHandler.java:33)
+	at com.equo.chromium.swt.internal.spi.CommRouterHandler.lambda$1(CommRouterHandler.java:51)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025-05-28 09:26:43,742 : ERROR : Thread-46209 :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No rpc data service available (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 09:26:43,767 : ERROR : Thread-46211 :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 09:26:43,792 : ERROR : Thread-46213 :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No rpc data service available (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 45)
+2025-05-28 09:26:57,377 : WARN  : comm-pool-thread-2 :  : Node : Document Vector : 3:24 : There have to be at least 1 columns containing DocumentCells !
+2025-05-28 09:27:07,304 : WARN  : comm-pool-thread-2 :  : Node : Document Vector : 3:24 : There have to be at least 1 columns containing DocumentCells !
+2025-05-28 09:27:08,463 : WARN  : KNIME-Worker-42-Partitioning 3:12 :  : Node : Document Vector : 3:24 : There have to be at least 1 columns containing DocumentCells !
+2025-05-28 09:29:02,303 : WARN  : KNIME-Worker-44-Document Vector 3:24 :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-28 09:35:06,545 : WARN  : comm-pool-thread-2 :  : Node : Edit Nominal Domain : 3:29 : Missing Configuration.
+2025-05-28 09:38:08,368 : WARN  : KNIME-Worker-49-Document Vector 3:24 :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-28 09:43:22,798 : ERROR : Thread-57553 :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 09:43:22,800 : ERROR : Thread-57555 :  : KnimeBrowserView :  :  : Uncaught (in promise) TypeError: Cannot read properties of null (reading 'rowCount') (source: http://org.knime.core.ui.port/uiext/tableview/TableView.js; line: 15187)
+2025-05-28 10:26:07,345 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  : Workflow could not be loaded. Cannot invoke "String.equals(Object)" because "versionString" is null
+java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "versionString" is null
+	at org.knime.core.node.workflow.FileWorkflowPersistor.parseVersion(FileWorkflowPersistor.java:248)
+	at org.knime.core.node.workflow.WorkflowLoadHelper.createTemplateLoadPersistor(WorkflowLoadHelper.java:352)
+	at org.knime.core.node.workflow.WorkflowLoadHelper.createLoadPersistor(WorkflowLoadHelper.java:306)
+	at org.knime.core.node.workflow.WorkflowManager.createLoadPersistor(WorkflowManager.java:8618)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8658)
+	at org.knime.core.node.workflow.WorkflowManager.loadProject(WorkflowManager.java:8505)
+	at org.knime.workbench.editor2.LoadWorkflowRunnable.run(LoadWorkflowRunnable.java:199)
+	at org.knime.ui.java.util.DesktopAPUtil.loadWorkflow(DesktopAPUtil.java:188)
+	at org.knime.ui.java.util.DesktopAPUtil.fetchAndLoadWorkflowWithTask(DesktopAPUtil.java:152)
+	at org.knime.ui.java.api.OpenProject.loadProject(OpenProject.java:260)
+	at org.knime.ui.java.api.OpenProject.openProjectWithProgress(OpenProject.java:187)
+	at org.knime.ui.java.api.OpenProject.lambda$0(OpenProject.java:106)
+	at org.knime.ui.java.util.DesktopAPUtil.lambda$13(DesktopAPUtil.java:477)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+2025-05-28 10:26:07,354 : ERROR : main :  : OpenProject :  :  : Failed to open project
+org.knime.ui.java.api.OpenProject$OpenProjectException: The project could not be loaded.
+	at org.knime.ui.java.api.OpenProject.openProjectWithProgress(OpenProject.java:190)
+	at org.knime.ui.java.api.OpenProject.lambda$0(OpenProject.java:106)
+	at org.knime.ui.java.util.DesktopAPUtil.lambda$13(DesktopAPUtil.java:477)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+2025-05-28 10:26:07,359 : ERROR : Thread-67348 :  : KnimeBrowserView :  :  : %cerror%c Desktop API:: Error response 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 10:26:07,361 : ERROR : Thread-67350 :  : KnimeBrowserView :  :  : %cerror%c Could not open selected workflow: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      The project could not be loaded. (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 10:26:22,872 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  : Workflow could not be loaded. Cannot invoke "String.equals(Object)" because "versionString" is null
+java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "versionString" is null
+	at org.knime.core.node.workflow.FileWorkflowPersistor.parseVersion(FileWorkflowPersistor.java:248)
+	at org.knime.core.node.workflow.WorkflowLoadHelper.createTemplateLoadPersistor(WorkflowLoadHelper.java:352)
+	at org.knime.core.node.workflow.WorkflowLoadHelper.createLoadPersistor(WorkflowLoadHelper.java:306)
+	at org.knime.core.node.workflow.WorkflowManager.createLoadPersistor(WorkflowManager.java:8618)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8658)
+	at org.knime.core.node.workflow.WorkflowManager.loadProject(WorkflowManager.java:8505)
+	at org.knime.workbench.editor2.LoadWorkflowRunnable.run(LoadWorkflowRunnable.java:199)
+	at org.knime.ui.java.util.DesktopAPUtil.loadWorkflow(DesktopAPUtil.java:188)
+	at org.knime.ui.java.util.DesktopAPUtil.fetchAndLoadWorkflowWithTask(DesktopAPUtil.java:152)
+	at org.knime.ui.java.api.OpenProject.loadProject(OpenProject.java:260)
+	at org.knime.ui.java.api.OpenProject.openProjectWithProgress(OpenProject.java:187)
+	at org.knime.ui.java.api.OpenProject.lambda$0(OpenProject.java:106)
+	at org.knime.ui.java.util.DesktopAPUtil.lambda$13(DesktopAPUtil.java:477)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+2025-05-28 10:26:22,878 : ERROR : main :  : OpenProject :  :  : Failed to open project
+org.knime.ui.java.api.OpenProject$OpenProjectException: The project could not be loaded.
+	at org.knime.ui.java.api.OpenProject.openProjectWithProgress(OpenProject.java:190)
+	at org.knime.ui.java.api.OpenProject.lambda$0(OpenProject.java:106)
+	at org.knime.ui.java.util.DesktopAPUtil.lambda$13(DesktopAPUtil.java:477)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+2025-05-28 10:26:22,884 : ERROR : Thread-67869 :  : KnimeBrowserView :  :  : %cerror%c Desktop API:: Error response 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 10:26:23,884 : ERROR : Thread-67914 :  : KnimeBrowserView :  :  : %cerror%c Desktop API:: Error response 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 10:26:44,871 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  : Workflow could not be loaded. Cannot invoke "String.equals(Object)" because "versionString" is null
+java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "versionString" is null
+	at org.knime.core.node.workflow.FileWorkflowPersistor.parseVersion(FileWorkflowPersistor.java:248)
+	at org.knime.core.node.workflow.WorkflowLoadHelper.createTemplateLoadPersistor(WorkflowLoadHelper.java:352)
+	at org.knime.core.node.workflow.WorkflowLoadHelper.createLoadPersistor(WorkflowLoadHelper.java:306)
+	at org.knime.core.node.workflow.WorkflowManager.createLoadPersistor(WorkflowManager.java:8618)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8658)
+	at org.knime.core.node.workflow.WorkflowManager.loadProject(WorkflowManager.java:8505)
+	at org.knime.workbench.editor2.LoadWorkflowRunnable.run(LoadWorkflowRunnable.java:199)
+	at org.knime.ui.java.util.DesktopAPUtil.loadWorkflow(DesktopAPUtil.java:188)
+	at org.knime.ui.java.util.DesktopAPUtil.fetchAndLoadWorkflowWithTask(DesktopAPUtil.java:152)
+	at org.knime.ui.java.api.OpenProject.loadProject(OpenProject.java:260)
+	at org.knime.ui.java.api.OpenProject.openProjectWithProgress(OpenProject.java:187)
+	at org.knime.ui.java.api.OpenProject.lambda$0(OpenProject.java:106)
+	at org.knime.ui.java.util.DesktopAPUtil.lambda$13(DesktopAPUtil.java:477)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+2025-05-28 10:26:44,877 : ERROR : main :  : OpenProject :  :  : Failed to open project
+org.knime.ui.java.api.OpenProject$OpenProjectException: The project could not be loaded.
+	at org.knime.ui.java.api.OpenProject.openProjectWithProgress(OpenProject.java:190)
+	at org.knime.ui.java.api.OpenProject.lambda$0(OpenProject.java:106)
+	at org.knime.ui.java.util.DesktopAPUtil.lambda$13(DesktopAPUtil.java:477)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+2025-05-28 10:26:44,884 : ERROR : Thread-68635 :  : KnimeBrowserView :  :  : %cerror%c Desktop API:: Error response 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 10:26:44,885 : ERROR : Thread-68637 :  : KnimeBrowserView :  :  : %cerror%c Could not open selected workflow: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      The project could not be loaded. (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 10:30:36,015 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  : Workflow could not be loaded. Cannot invoke "String.equals(Object)" because "versionString" is null
+java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "versionString" is null
+	at org.knime.core.node.workflow.FileWorkflowPersistor.parseVersion(FileWorkflowPersistor.java:248)
+	at org.knime.core.node.workflow.WorkflowLoadHelper.createTemplateLoadPersistor(WorkflowLoadHelper.java:352)
+	at org.knime.core.node.workflow.WorkflowLoadHelper.createLoadPersistor(WorkflowLoadHelper.java:306)
+	at org.knime.core.node.workflow.WorkflowManager.createLoadPersistor(WorkflowManager.java:8618)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8658)
+	at org.knime.core.node.workflow.WorkflowManager.loadProject(WorkflowManager.java:8505)
+	at org.knime.workbench.editor2.LoadWorkflowRunnable.run(LoadWorkflowRunnable.java:199)
+	at org.knime.ui.java.util.DesktopAPUtil.loadWorkflow(DesktopAPUtil.java:188)
+	at org.knime.ui.java.util.DesktopAPUtil.fetchAndLoadWorkflowWithTask(DesktopAPUtil.java:152)
+	at org.knime.ui.java.api.OpenProject.loadProject(OpenProject.java:260)
+	at org.knime.ui.java.api.OpenProject.openProjectWithProgress(OpenProject.java:187)
+	at org.knime.ui.java.api.OpenProject.lambda$0(OpenProject.java:106)
+	at org.knime.ui.java.util.DesktopAPUtil.lambda$13(DesktopAPUtil.java:477)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+2025-05-28 10:30:36,021 : ERROR : main :  : OpenProject :  :  : Failed to open project
+org.knime.ui.java.api.OpenProject$OpenProjectException: The project could not be loaded.
+	at org.knime.ui.java.api.OpenProject.openProjectWithProgress(OpenProject.java:190)
+	at org.knime.ui.java.api.OpenProject.lambda$0(OpenProject.java:106)
+	at org.knime.ui.java.util.DesktopAPUtil.lambda$13(DesktopAPUtil.java:477)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+2025-05-28 10:30:36,026 : ERROR : Thread-69477 :  : KnimeBrowserView :  :  : %cerror%c Desktop API:: Error response 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 10:30:36,027 : ERROR : Thread-69479 :  : KnimeBrowserView :  :  : %cerror%c Could not open selected workflow: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      The project could not be loaded. (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 10:34:25,635 : WARN  : KNIME-Worker-53-Document Vector 3:24 :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-28 10:34:29,763 : WARN  : comm-pool-thread-2 :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-28 10:34:53,010 : WARN  : comm-pool-thread-2 :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-28 10:35:21,762 : WARN  : KNIME-Worker-57-Column Filter 3:31 :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-28 10:35:24,245 : ERROR : Thread-81128 :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 10:35:24,246 : ERROR : Thread-81130 :  : KnimeBrowserView :  :  : Uncaught (in promise) TypeError: Cannot read properties of null (reading 'rowCount') (source: http://org.knime.core.ui.port/uiext/tableview/TableView.js; line: 15187)
+2025-05-28 10:47:47,408 : WARN  : KNIME-Worker-64-Document Vector 3:24 :  : Node : Naive Bayes Learner : 3:13 : Classification column not found in input table
+2025-05-28 10:48:57,553 : WARN  : comm-pool-thread-2 :  : Node : Table Writer : 3:32 : Please specify a file
+2025-05-28 10:49:39,516 : ERROR : SwingWorker-pool-17-thread-8 :  : StatusSwingWorker : Table Writer : 3:32 : Error while updating status message: Illegal char <:> at index 103: C:\Users\olgt1\Documents\6. KNIME Project\IA_Proyecto_Final\Clasificador Automatico por Resenias\data\C:\Users\olgt1\Downloads\To be Deleted\table.table
+java.nio.file.InvalidPathException: Illegal char <:> at index 103: C:\Users\olgt1\Documents\6. KNIME Project\IA_Proyecto_Final\Clasificador Automatico por Resenias\data\C:\Users\olgt1\Downloads\To be Deleted\table.table
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at java.base/java.nio.file.Path.of(Unknown Source)
+	at java.base/java.nio.file.Paths.get(Unknown Source)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystem.toLocalPath(LocalWorkflowAwareFileSystem.java:184)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystem.existsWithAccessibilityCheck(LocalWorkflowAwareFileSystem.java:344)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystemProvider.exists(LocalWorkflowAwareFileSystemProvider.java:159)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystemProvider.exists(LocalWorkflowAwareFileSystemProvider.java:1)
+	at org.knime.filehandling.core.connections.base.BaseFileSystemProvider.existsCached(BaseFileSystemProvider.java:656)
+	at org.knime.filehandling.core.connections.base.BaseFileSystemProvider.readAttributes(BaseFileSystemProvider.java:733)
+	at java.base/java.nio.file.Files.readAttributes(Unknown Source)
+	at org.knime.filehandling.core.connections.FSFiles.exists(FSFiles.java:309)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.writer.DefaultWriterStatusMessageReporter.report(DefaultWriterStatusMessageReporter.java:123)
+	at org.knime.filehandling.core.defaultnodesettings.status.StatusSwingWorker.doInBackgroundWithContext(StatusSwingWorker.java:107)
+	at org.knime.filehandling.core.defaultnodesettings.status.StatusSwingWorker.doInBackgroundWithContext(StatusSwingWorker.java:1)
+	at org.knime.core.util.SwingWorkerWithContext.doInBackground(SwingWorkerWithContext.java:106)
+	at java.desktop/javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025-05-28 10:49:42,641 : ERROR : SwingWorker-pool-17-thread-9 :  : StatusSwingWorker : Table Writer : 3:32 : Error while updating status message: Illegal char <:> at index 98: C:\Users\olgt1\Documents\6. KNIME Project\IA_Proyecto_Final\Clasificador Automatico por Resenias\C:\Users\olgt1\Downloads\To be Deleted\table.table
+java.nio.file.InvalidPathException: Illegal char <:> at index 98: C:\Users\olgt1\Documents\6. KNIME Project\IA_Proyecto_Final\Clasificador Automatico por Resenias\C:\Users\olgt1\Downloads\To be Deleted\table.table
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at java.base/java.nio.file.Path.of(Unknown Source)
+	at java.base/java.nio.file.Paths.get(Unknown Source)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystem.toLocalPath(LocalWorkflowAwareFileSystem.java:184)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystem.existsWithAccessibilityCheck(LocalWorkflowAwareFileSystem.java:344)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystemProvider.exists(LocalWorkflowAwareFileSystemProvider.java:159)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystemProvider.exists(LocalWorkflowAwareFileSystemProvider.java:1)
+	at org.knime.filehandling.core.connections.base.BaseFileSystemProvider.existsCached(BaseFileSystemProvider.java:656)
+	at org.knime.filehandling.core.connections.base.BaseFileSystemProvider.readAttributes(BaseFileSystemProvider.java:733)
+	at java.base/java.nio.file.Files.readAttributes(Unknown Source)
+	at org.knime.filehandling.core.connections.FSFiles.exists(FSFiles.java:309)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.writer.DefaultWriterStatusMessageReporter.report(DefaultWriterStatusMessageReporter.java:123)
+	at org.knime.filehandling.core.defaultnodesettings.status.StatusSwingWorker.doInBackgroundWithContext(StatusSwingWorker.java:107)
+	at org.knime.filehandling.core.defaultnodesettings.status.StatusSwingWorker.doInBackgroundWithContext(StatusSwingWorker.java:1)
+	at org.knime.core.util.SwingWorkerWithContext.doInBackground(SwingWorkerWithContext.java:106)
+	at java.desktop/javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025-05-28 10:50:01,270 : ERROR : KNIME-Worker-65-Table Writer 3:32 :  : Node : Table Writer : 3:32 : Execute failed: /Clasificador Automatico por Resenias/table: Accessing paths inside a workflow is not allowed.
+org.knime.filehandling.core.connections.workflowaware.WorkflowAwareErrorHandling$AccessInsideWorkflowException: /Clasificador Automatico por Resenias/table: Accessing paths inside a workflow is not allowed.
+	at org.knime.filehandling.core.connections.workflowaware.WorkflowAwareErrorHandling.createAccessInsideWorkflowException(WorkflowAwareErrorHandling.java:136)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystem.toLocalPathWithAccessibilityCheck(LocalWorkflowAwareFileSystem.java:329)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystem.getEntity(LocalWorkflowAwareFileSystem.java:197)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystemProvider.getEntity(LocalWorkflowAwareFileSystemProvider.java:136)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystemProvider.checkSupport(LocalWorkflowAwareFileSystemProvider.java:127)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystemProvider.newOutputStreamInternal(LocalWorkflowAwareFileSystemProvider.java:146)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystemProvider.newOutputStreamInternal(LocalWorkflowAwareFileSystemProvider.java:1)
+	at org.knime.filehandling.core.connections.base.BaseFileSystemProvider.newOutputStream(BaseFileSystemProvider.java:500)
+	at java.base/java.nio.file.Files.newOutputStream(Unknown Source)
+	at org.knime.base.node.io.filehandling.table.writer.TableWriterNodeModel$DelayedOpenOutputStream.getOrOpenOutputStream(TableWriterNodeModel.java:203)
+	at org.knime.base.node.io.filehandling.table.writer.TableWriterNodeModel$DelayedOpenOutputStream.write(TableWriterNodeModel.java:223)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(Unknown Source)
+	at java.base/java.io.BufferedOutputStream.flush(Unknown Source)
+	at java.base/java.util.zip.DeflaterOutputStream.flush(Unknown Source)
+	at org.knime.core.data.util.NonClosableOutputStream.flush(NonClosableOutputStream.java:82)
+	at java.base/java.io.BufferedOutputStream.flush(Unknown Source)
+	at java.base/java.io.FilterOutputStream.close(Unknown Source)
+	at org.knime.core.node.config.base.XMLConfig.save(XMLConfig.java:183)
+	at org.knime.core.node.config.base.ConfigBase.saveToXML(ConfigBase.java:1313)
+	at org.knime.core.data.container.BufferedDataContainerDelegate.writeToStream(BufferedDataContainerDelegate.java:1066)
+	at org.knime.core.data.container.DataContainer.writeToStream(DataContainer.java:476)
+	at org.knime.base.node.io.filehandling.table.writer.TableWriterNodeModel.execute(TableWriterNodeModel.java:132)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-05-28 10:50:25,563 : ERROR : Thread-97604 :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:32 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:19, 3:21, 3:22, 3:23, 3:24, 3:28, 3:29, 3:30, 3:31, 3:33] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 10:50:25,572 : ERROR : Thread-97607 :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 10:50:25,574 : ERROR : Thread-97610 :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:32 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:19, 3:21, 3:22, 3:23, 3:24, 3:28, 3:29, 3:30, 3:31, 3:33] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 45)
+2025-05-28 10:50:27,943 : WARN  : comm-pool-thread-2 :  : Node : Table Writer : 3:33 : Please specify a file
+2025-05-28 10:50:58,951 : WARN  : comm-pool-thread-2 :  : Node : Table Reader : 3:34 : Please specify a file
+2025-05-28 10:51:15,023 : WARN  : comm-pool-thread-2 :  : Node : Table Writer : 3:33 : Please specify a file
+2025-05-28 10:51:41,392 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,395 : ERROR : AWT-EventQueue-0 :  : BufferFromFileIteratorVersion20 : Table Reader : 3:34 : Errors while reading row 1 from file "knime_container_20250528_4880615063050908021.bin.snappy": Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809; Suppressing further warnings.
+java.lang.IllegalStateException: Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+	at org.knime.core.node.workflow.WorkflowDataRepository.getHandlerNotNull(WorkflowDataRepository.java:190)
+	at org.knime.core.data.filestore.internal.FileStoreProxy.retrieveFileStoreHandlerFrom(FileStoreProxy.java:95)
+	at org.knime.core.data.filestore.FileStoreCell.retrieveFileStoreHandlersFrom(FileStoreCell.java:148)
+	at org.knime.core.data.filestore.FileStoreUtil.retrieveFileStoreHandlersFrom(FileStoreUtil.java:158)
+	at org.knime.core.data.filestore.FileStoreUtil.retrieveFileStoreHandlersFrom(FileStoreUtil.java:150)
+	at org.knime.core.data.container.BufferFromFileIteratorVersion20$DataCellStreamReader.readDataCell(BufferFromFileIteratorVersion20.java:371)
+	at org.knime.core.data.container.BufferFromFileIteratorVersion20.next(BufferFromFileIteratorVersion20.java:172)
+	at org.knime.core.data.container.BufferFromFileIteratorVersion20.next(BufferFromFileIteratorVersion20.java:1)
+	at org.knime.core.node.tableview.TableContentModel.cacheNextRow(TableContentModel.java:1170)
+	at org.knime.core.util.ThreadUtils.getAsBooleanWithContext(ThreadUtils.java:673)
+	at org.knime.core.node.tableview.TableContentModel.cacheNextRowWithContext(TableContentModel.java:1154)
+	at org.knime.core.node.tableview.TableContentModel.setDataTableIntern(TableContentModel.java:451)
+	at org.knime.core.node.tableview.TableContentModel.lambda$0(TableContentModel.java:342)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at org.knime.core.node.util.ViewUtils.invokeAndWaitInEDT(ViewUtils.java:136)
+	at org.knime.core.node.tableview.TableContentModel.setDataTable(TableContentModel.java:342)
+	at org.knime.filehandling.core.node.table.reader.preview.dialog.TableReaderPreviewModel.lambda$1(TableReaderPreviewModel.java:105)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2025-05-28 10:51:41,397 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,398 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,398 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,399 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,399 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,400 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,400 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,401 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,401 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,403 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,403 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,403 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,404 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,404 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,405 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,405 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,405 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,406 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,406 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,406 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,406 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,406 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,407 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,407 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,407 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,407 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,407 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,407 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,408 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,408 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,408 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,408 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,408 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,408 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,409 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,409 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,409 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,409 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,409 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,410 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,410 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,410 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,410 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,411 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,411 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,411 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,411 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,413 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,413 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:51:41,413 : ERROR : AWT-EventQueue-0 :  : WorkflowDataRepository : Table Reader : 3:34 : Unknown file store handler to UUID 464b43b5-93ca-45a9-9cbc-79f983f0a809
+2025-05-28 10:53:10,768 : ERROR : Thread-99611 :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:33 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:19, 3:21, 3:22, 3:23, 3:24, 3:28, 3:29, 3:30, 3:31, 3:34] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 10:53:10,769 : ERROR : Thread-99613 :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 10:53:10,769 : ERROR : Thread-99615 :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:33 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:19, 3:21, 3:22, 3:23, 3:24, 3:28, 3:29, 3:30, 3:31, 3:34] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 45)
+2025-05-28 10:53:13,172 : ERROR : Thread-99707 :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:31 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:19, 3:21, 3:22, 3:23, 3:24, 3:28, 3:29, 3:30, 3:34] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 10:53:13,176 : ERROR : Thread-99710 :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 10:53:13,178 : ERROR : Thread-99712 :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:31 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:19, 3:21, 3:22, 3:23, 3:24, 3:28, 3:29, 3:30, 3:34] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 45)
+2025-05-28 10:54:53,752 : WARN  : main :  : Node : Rule Engine : 3:30 : Line: 5: Not a column: Sentiment
+$Sentiment$ = "positive" => "positive"
+^
+2025-05-28 10:54:54,417 : WARN  : main :  : Node : Rule Engine : 3:30 : Line: 5: Not a column: Sentiment
+$Sentiment$ = "positive" => "positive"
+^
+2025-05-28 10:54:58,599 : WARN  : KNIME-Worker-67-Bag Of Words Creator 3:11 :  : Node : Rule Engine : 3:30 : Line: 5: Not a column: Sentiment
+$Sentiment$ = "positive" => "positive"
+^
+2025-05-28 10:55:39,038 : ERROR : Thread-103853 :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:30 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:19, 3:21, 3:22, 3:23, 3:24, 3:28, 3:29, 3:31] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 10:55:39,043 : ERROR : Thread-103855 :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:30 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:19, 3:21, 3:22, 3:23, 3:24, 3:28, 3:29, 3:31] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 45)
+2025-05-28 10:55:40,121 : ERROR : Thread-103959 :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:30 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:13, 3:14, 3:15, 3:16, 3:19, 3:21, 3:22, 3:23, 3:24, 3:28, 3:29, 3:31] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 10:55:42,269 : WARN  : comm-pool-thread-2 :  : Node : Row Filter : 3:31 : At least one filter criterion is needed.
+2025-05-28 10:58:53,414 : ERROR : Thread-110830 :  : KnimeBrowserView :  :  : %cerror%c Error captured hook ::  
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 10:58:56,706 : WARN  : KNIME-Worker-79-Logistic Regression Learner 3:32 :  : Node : Logistic Regression Learner : 3:32 : The algorithm did not reach convergence after the specified number of epochs. Setting the epoch limit higher might result in a better model.
+2025-05-28 11:00:00,226 : WARN  : KNIME-Worker-80-Document Vector 3:24 :  : Node : Logistic Regression Learner : 3:32 : The target is not in the input.
+2025-05-28 11:01:49,093 : WARN  : comm-pool-thread-2 :  : Node : Logistic Regression Learner : 3:32 : The target is not in the input.
+2025-05-28 11:02:35,111 : WARN  : KNIME-Worker-82-Number to String 3:34 :  : Node : Logistic Regression Learner : 3:32 : The target is not in the input.
+2025-05-28 11:06:08,131 : WARN  : comm-pool-thread-2 :  : Node : Logistic Regression Learner : 3:32 : Type of column "Sentiment" is not nominal.
+2025-05-28 11:06:21,793 : WARN  : KNIME-Worker-83-Table Manipulator 3:35 :  : Node : Logistic Regression Learner : 3:32 : Type of column "Sentiment" is not nominal.
+2025-05-28 11:08:11,434 : ERROR : Thread-121289 :  : KnimeBrowserView :  :  : %cerror%c Error captured hook ::  
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 11:09:37,318 : WARN  : KNIME-Worker-85-Logistic Regression Learner 3:32 :  : Node : Logistic Regression Learner : 3:32 : Execution canceled
+2025-05-28 11:14:43,572 : WARN  : comm-pool-thread-15 :  : DefaultJsonRpcRequestHandler :  :  : Problem handling json rpc request
+com.fasterxml.jackson.core.exc.StreamConstraintsException: String value length (20054016) exceeds the maximum allowed (20000000, from `StreamReadConstraints.getMaxStringLength()`)
+	at com.fasterxml.jackson.core.StreamReadConstraints._constructException(StreamReadConstraints.java:549)
+	at com.fasterxml.jackson.core.StreamReadConstraints.validateStringLength(StreamReadConstraints.java:484)
+	at com.fasterxml.jackson.core.util.ReadConstrainedTextBuffer.validateStringLength(ReadConstrainedTextBuffer.java:27)
+	at com.fasterxml.jackson.core.util.TextBuffer.finishCurrentSegment(TextBuffer.java:939)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._finishString2(UTF8StreamJsonParser.java:2588)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._finishAndReturnString(UTF8StreamJsonParser.java:2564)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.getText(UTF8StreamJsonParser.java:338)
+	at com.fasterxml.jackson.databind.deser.std.BaseNodeDeserializer._deserializeContainerNoRecursion(JsonNodeDeserializer.java:572)
+	at com.fasterxml.jackson.databind.deser.std.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:100)
+	at com.fasterxml.jackson.databind.deser.std.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:25)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4899)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3883)
+	at com.googlecode.jsonrpc4j.ReadContext.nextValue(ReadContext.java:25)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleRequest(JsonRpcBasicServer.java:238)
+	at org.knime.gateway.impl.jsonrpc.JsonRpcRequestHandler.handle(JsonRpcRequestHandler.java:104)
+	at org.knime.ui.java.browser.lifecycle.Init.lambda$13(Init.java:290)
+	at com.equo.comm.common.MessageHandler.processReceivedEventMessage(MessageHandler.java:131)
+	at com.equo.comm.ee.provider.service.ChromiumService.receiveMessage(ChromiumService.java:98)
+	at com.equo.comm.ee.provider.CommunicationManagerChromiumImpl.receiveMessage(CommunicationManagerChromiumImpl.java:48)
+	at com.equo.chromium.swt.internal.spi.CommRouterHandler.handleRequest(CommRouterHandler.java:33)
+	at com.equo.chromium.swt.internal.spi.CommRouterHandler.lambda$1(CommRouterHandler.java:51)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025-05-28 11:14:43,604 : ERROR : Thread-123881 :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Bad response format (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 11:14:43,631 : ERROR : Thread-123886 :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 11:14:43,634 : ERROR : Thread-123888 :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: Bad response format (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 26)
+2025-05-28 11:16:52,741 : WARN  : KNIME-Worker-86-Logistic Regression Learner 3:32 :  : Node : Logistic Regression Learner : 3:32 : The algorithm did not reach convergence after the specified number of epochs. Setting the epoch limit higher might result in a better model.
+The covariance matrix could not be calculated because the observed fisher information matrix was singular. Did you properly normalize the numerical features?
+2025-05-28 11:32:11,630 : WARN  : KNIME-Worker-88-String to Number 3:38 :  : Node : String to Number : 3:38 : Problems in 176186430 rows, first error: "0.0" in cell ["Row0", column "green", row 1] can not be transformed into a number
+2025-05-28 11:32:11,645 : WARN  : KNIME-Worker-88-String to Number 3:38 :  : Node : String to Number : 3:38 : Problems in 176186430 rows, first error: "0.0" in cell ["Row0", column "green", row 1] can not be transformed into a number
+ RowID  | Sentiment | green  |  tea  
+--------+-----------+--------+--------
+ Row0   | 1.0       | 0.0    | 0.0   
+                      ^^^
+For input string: "0.0"
+2025-05-28 11:35:59,023 : WARN  : KNIME-Worker-91-Logistic Regression Learner 3:32 :  : Node : Logistic Regression Learner : 3:32 : Execution canceled
+2025-05-28 11:36:05,027 : WARN  : comm-pool-thread-15 :  : Node : Logistic Regression Learner : 3:32 : Type of column "Sentiment" is not nominal.
+2025-05-28 11:36:58,196 : WARN  : KNIME-Worker-93-String to Number 3:38 :  : Node : Logistic Regression Learner : 3:32 : Type of column "Sentiment" is not nominal.
+2025-05-28 11:42:07,810 : WARN  : main :  : WrappedNodeDialog : Partitioning : 3:19 : failed to apply settings: Cannot load settings into node; it is executing or has executing successors
+java.lang.IllegalStateException: Cannot load settings into node; it is executing or has executing successors
+	at org.knime.core.node.workflow.WorkflowManager.loadNodeSettings(WorkflowManager.java:2257)
+	at org.knime.core.node.workflow.NodeContainer.applySettingsFromDialog(NodeContainer.java:1142)
+	at org.knime.core.ui.wrapper.NodeContainerWrapper.applySettingsFromDialog(NodeContainerWrapper.java:264)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.callApplySettingsFromDialog(WrappedNodeDialog.java:677)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doApply(WrappedNodeDialog.java:630)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog$6.widgetSelected(WrappedNodeDialog.java:515)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.open(WrappedNodeDialog.java:198)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openDialog(NodeContainerEditPart.java:967)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:869)
+	at org.knime.ui.java.api.NodeAPI.openNodeDialog(NodeAPI.java:102)
+	at jdk.internal.reflect.GeneratedMethodAccessor199.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.knime.ui.java.api.DesktopAPI.invokeMethod(DesktopAPI.java:178)
+	at org.knime.ui.java.api.DesktopAPI.lambda$1(DesktopAPI.java:148)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:211)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+2025-05-28 11:42:12,124 : WARN  : main :  : WrappedNodeDialog : Partitioning : 3:19 : failed to apply settings: Cannot load settings into node; it is executing or has executing successors
+java.lang.IllegalStateException: Cannot load settings into node; it is executing or has executing successors
+	at org.knime.core.node.workflow.WorkflowManager.loadNodeSettings(WorkflowManager.java:2257)
+	at org.knime.core.node.workflow.NodeContainer.applySettingsFromDialog(NodeContainer.java:1142)
+	at org.knime.core.ui.wrapper.NodeContainerWrapper.applySettingsFromDialog(NodeContainerWrapper.java:264)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.callApplySettingsFromDialog(WrappedNodeDialog.java:677)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doApply(WrappedNodeDialog.java:630)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doOK(WrappedNodeDialog.java:564)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog$5.widgetSelected(WrappedNodeDialog.java:500)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.open(WrappedNodeDialog.java:198)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openDialog(NodeContainerEditPart.java:967)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:869)
+	at org.knime.ui.java.api.NodeAPI.openNodeDialog(NodeAPI.java:102)
+	at jdk.internal.reflect.GeneratedMethodAccessor199.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.knime.ui.java.api.DesktopAPI.invokeMethod(DesktopAPI.java:178)
+	at org.knime.ui.java.api.DesktopAPI.lambda$1(DesktopAPI.java:148)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:211)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+2025-05-28 11:43:47,129 : WARN  : KNIME-Worker-96-Logistic Regression Learner 3:32 :  : Node : Logistic Regression Learner : 3:32 : Execution canceled
+2025-05-28 11:45:03,948 : WARN  : KNIME-Worker-96-Logistic Regression Learner 3:32 :  : Node : Logistic Regression Learner : 3:32 : The algorithm did not reach convergence after the specified number of epochs. Setting the epoch limit higher might result in a better model.
+The covariance matrix could not be calculated because the observed fisher information matrix was singular. Did you properly normalize the numerical features?
+2025-05-28 11:49:24,634 : WARN  : comm-pool-thread-15 :  : Node : Scorer : 3:22 : Column 'Sentiment' not found.
+2025-05-28 11:49:31,840 : WARN  : main :  : WrappedNodeDialog : Scorer : 3:22 : failed to apply settings: First and second column cannot be the same.
+org.knime.core.node.InvalidSettingsException: First and second column cannot be the same.
+	at org.knime.base.node.mine.scorer.accuracy.AccuracyScorer2NodeDialog.saveSettingsTo(AccuracyScorer2NodeDialog.java:349)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:553)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:792)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2025-05-28 11:53:32,108 : WARN  : comm-pool-thread-15 :  : Node : Logistic Regression Predictor : 3:36 : The table for prediction does not contain the column "green".
+2025-05-28 11:54:21,931 : WARN  : main :  : Node : Logistic Regression Predictor : 3:36 : The table for prediction does not contain the column "green".
+2025-05-28 11:54:22,385 : WARN  : main :  : Node : Logistic Regression Predictor : 3:36 : The table for prediction does not contain the column "green".
+2025-05-28 11:54:30,777 : WARN  : main :  : Node : Logistic Regression Predictor : 3:36 : The table for prediction does not contain the column "green".
+2025-05-28 11:54:31,049 : WARN  : main :  : Node : Logistic Regression Predictor : 3:36 : The table for prediction does not contain the column "green".
+2025-05-28 11:55:50,756 : WARN  : KNIME-Worker-118-Document Vector 3:24 :  : Node : Scorer : 3:22 : Column 'Variable' not found.
+2025-05-28 11:55:51,390 : WARN  : KNIME-Worker-117-Table Manipulator 3:35 :  : Node : Scorer : 3:22 : Column 'Variable' not found.
+2025-05-28 11:55:51,710 : WARN  : KNIME-Worker-121-String to Number 3:38 :  : Node : Scorer : 3:22 : Column 'Variable' not found.
+2025-05-28 11:55:53,415 : WARN  : KNIME-Worker-124-Logistic Regression Learner 3:32 :  : Node : Logistic Regression Learner : 3:32 : Columns "container", "pricy", "saved", "belgian", "bring",  ... <174 more> have constant values  - will be ignored during training
+The data contains more features than rows. In this case it is recommended to use an informative prior (other than Uniform).
+The algorithm did not reach convergence after the specified number of epochs. Setting the epoch limit higher might result in a better model.
+The covariance matrix could not be calculated because the observed fisher information matrix was singular. Did you properly normalize the numerical features?
+2025-05-28 11:55:54,504 : WARN  : KNIME-Worker-128-Logistic Regression Predictor 3:36 :  : Node : Scorer : 3:22 : Column 'Variable' not found.
+2025-05-28 11:58:34,442 : WARN  : KNIME-Worker-132-Document Vector 3:24 :  : Node : Scorer : 3:22 : Column 'Variable' not found.
+2025-05-28 11:58:39,858 : WARN  : KNIME-Worker-138-Table Manipulator 3:35 :  : Node : Scorer : 3:22 : Column 'Variable' not found.
+2025-05-28 11:58:42,876 : WARN  : KNIME-Worker-136-String to Number 3:38 :  : Node : Scorer : 3:22 : Column 'Variable' not found.
+2025-05-28 11:59:06,971 : WARN  : KNIME-Worker-144-Logistic Regression Learner 3:32 :  : Node : Logistic Regression Learner : 3:32 : Columns "cancel", "german", "nicely", "civility", "allowed",  ... <414 more> have constant values  - will be ignored during training
+The algorithm did not reach convergence after the specified number of epochs. Setting the epoch limit higher might result in a better model.
+The covariance matrix could not be calculated because the observed fisher information matrix was singular. Did you properly normalize the numerical features?
+2025-05-28 11:59:09,352 : WARN  : KNIME-Worker-134-Logistic Regression Predictor 3:36 :  : Node : Scorer : 3:22 : Column 'Variable' not found.
+2025-05-28 12:00:30,666 : WARN  : comm-pool-thread-15 :  : Node : Scorer : 3:22 : Column 'Variable' not found.
+2025-05-28 12:01:08,598 : WARN  : KNIME-Worker-149-Logistic Regression Learner 3:32 :  : Node : Logistic Regression Learner : 3:32 : Columns "cancel", "german", "nicely", "civility", "allowed",  ... <414 more> have constant values  - will be ignored during training
+The algorithm did not reach convergence after the specified number of epochs. Setting the epoch limit higher might result in a better model.
+The covariance matrix could not be calculated because the observed fisher information matrix was singular. Did you properly normalize the numerical features?
+2025-05-28 12:03:01,438 : WARN  : comm-pool-thread-15 :  : Node : Decision Tree Learner : 3:40 : Guessing target column: "Sentiment".
+2025-05-28 12:03:58,215 : ERROR : Thread-162592 :  : KnimeBrowserView :  :  : %cerror%c Error captured hook ::  
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 12:05:26,192 : WARN  : KNIME-Worker-150-Decision Tree Learner 3:40 :  : Node : Decision Tree Learner : 3:40 : Execution canceled
+2025-05-28 12:06:10,503 : WARN  : comm-pool-thread-15 :  : Node : Decision Tree Learner : 3:40 : Class column "Sentiment" not found or incompatible
+2025-05-28 12:06:18,597 : WARN  : KNIME-Worker-163-String to Number 3:38 :  : Node : String to Number : 3:38 : Problems in 1246831 rows, first error: "1.0" in cell ["Row0", column "Sentiment", row 1] can not be transformed into a number
+2025-05-28 12:06:18,599 : WARN  : KNIME-Worker-163-String to Number 3:38 :  : Node : String to Number : 3:38 : Problems in 1246831 rows, first error: "1.0" in cell ["Row0", column "Sentiment", row 1] can not be transformed into a number
+ RowID  | Sentiment | green 
+--------+-----------+--------
+ Row0   | 1.0       | 0.0   
+          ^^^
+For input string: "1.0"
+2025-05-28 12:07:30,375 : WARN  : comm-pool-thread-15 :  : Node : Decision Tree Learner : 3:40 : Class column "Sentiment" not found or incompatible
+2025-05-28 12:07:31,582 : WARN  : KNIME-Worker-167-String to Number 3:38 :  : Node : Decision Tree Learner : 3:40 : Class column "Sentiment" not found or incompatible
+2025-05-28 12:08:09,714 : WARN  : KNIME-Worker-169-Normalizer 3:39 :  : Node : Decision Tree Learner : 3:40 : Class column "Sentiment" not found or incompatible
+2025-05-28 12:09:21,790 : ERROR : Thread-173004 :  : KnimeBrowserView :  :  : %cerror%c Error captured hook ::  
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 12:09:25,742 : ERROR : Thread-173290 :  : KnimeBrowserView :  :  : %cerror%c Error captured hook ::  
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 12:13:17,594 : WARN  : comm-pool-thread-1 :  : Node : Scorer : 3:22 : Column 'Variable' not found.
+2025-05-28 12:41:45,646 : WARN  : KNIME-Worker-41-Decision Tree Learner 3:40 :  : Node : Decision Tree Learner : 3:40 : Execution canceled
+2025-05-28 12:42:33,483 : WARN  : KNIME-Worker-43-Decision Tree Learner 3:40 :  : Node : Decision Tree Learner : 3:40 : Execution canceled
+2025-05-28 12:44:13,383 : WARN  : ModalContext :  : Node : Decision Tree Learner : 3:40 : Execution canceled
+2025-05-28 12:44:43,342 : WARN  : comm-pool-thread-2 :  : Node : Normalizer : 3:39 : No columns included - input stays unchanged.
+2025-05-28 12:44:43,359 : WARN  : comm-pool-thread-2 :  : Node : Number to String : 3:41 : No columns selected.
+2025-05-28 12:44:50,365 : WARN  : main :  : Node : Normalizer : 3:39 : No columns included - input stays unchanged.
+2025-05-28 12:44:50,373 : WARN  : main :  : Node : Number to String : 3:41 : No columns selected.
+2025-05-28 12:44:51,906 : WARN  : main :  : Node : Normalizer : 3:39 : No columns included - input stays unchanged.
+2025-05-28 12:44:51,912 : WARN  : main :  : Node : Number to String : 3:41 : No columns selected.
+2025-05-28 12:44:58,913 : WARN  : KNIME-Worker-0-Partitioning 3:12 :  : Node : Normalizer : 3:39 : No columns included - input stays unchanged.
+2025-05-28 12:45:28,607 : WARN  : KNIME-Worker-0-Normalizer 3:39 :  : Node : Normalizer : 3:39 : No columns included - input stays unchanged.
+2025-05-28 12:45:29,623 : WARN  : KNIME-Worker-0-Normalizer 3:39 :  : Node : Number to String : 3:41 : No columns selected.
+2025-05-28 12:45:47,585 : WARN  : KNIME-Worker-0-Number to String 3:41 :  : Node : Number to String : 3:41 : No columns selected for conversion, returning the unchanged input table as output table.
+2025-05-28 12:45:57,583 : WARN  : KNIME-Worker-1-Decision Tree Learner 3:40 :  : Node : Decision Tree Learner : 3:40 : Execution canceled
+2025-05-28 12:46:04,375 : ERROR : Thread-5924 :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:38 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:19, 3:22, 3:24, 3:28, 3:31, 3:33, 3:34, 3:35, 3:39, 3:40, 3:41, 3:42, 3:43] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 12:46:04,379 : ERROR : Thread-5926 :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 12:46:04,381 : ERROR : Thread-5928 :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:38 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:19, 3:22, 3:24, 3:28, 3:31, 3:33, 3:34, 3:35, 3:39, 3:40, 3:41, 3:42, 3:43] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 45)
+2025-05-28 12:46:39,589 : WARN  : KNIME-Worker-5-Document Vector 3:24 :  : Node : Normalizer : 3:39 : No columns included - input stays unchanged.
+2025-05-28 12:46:39,594 : WARN  : KNIME-Worker-5-Document Vector 3:24 :  : Node : Number to String : 3:41 : No columns selected.
+2025-05-28 12:46:40,113 : WARN  : KNIME-Worker-10-Table Manipulator 3:35 :  : Node : Normalizer : 3:39 : No columns included - input stays unchanged.
+2025-05-28 12:46:40,116 : WARN  : KNIME-Worker-10-Table Manipulator 3:35 :  : Node : Number to String : 3:41 : No columns selected.
+2025-05-28 12:46:40,243 : WARN  : KNIME-Worker-13-Partitioning 3:12 :  : Node : Normalizer : 3:39 : No columns included - input stays unchanged.
+2025-05-28 12:46:40,250 : WARN  : KNIME-Worker-6-Normalizer 3:39 :  : Node : Normalizer : 3:39 : No columns included - input stays unchanged.
+2025-05-28 12:46:40,394 : WARN  : KNIME-Worker-6-Normalizer 3:39 :  : Node : Number to String : 3:41 : No columns selected.
+2025-05-28 12:46:40,399 : WARN  : KNIME-Worker-7-Number to String 3:41 :  : Node : Number to String : 3:41 : No columns selected for conversion, returning the unchanged input table as output table.
+2025-05-28 12:48:14,581 : WARN  : KNIME-Worker-19-Document Vector 3:24 :  : Node : Normalizer : 3:39 : No columns included - input stays unchanged.
+2025-05-28 12:48:14,704 : WARN  : KNIME-Worker-19-Document Vector 3:24 :  : Node : Number to String : 3:41 : No columns selected.
+2025-05-28 12:48:14,954 : WARN  : KNIME-Worker-29-Table Manipulator 3:35 :  : Node : Normalizer : 3:39 : No columns included - input stays unchanged.
+2025-05-28 12:48:14,957 : WARN  : KNIME-Worker-29-Table Manipulator 3:35 :  : Node : Number to String : 3:41 : No columns selected.
+2025-05-28 12:48:15,012 : WARN  : KNIME-Worker-27-Partitioning 3:12 :  : Node : Normalizer : 3:39 : No columns included - input stays unchanged.
+2025-05-28 12:48:15,017 : WARN  : KNIME-Worker-20-Normalizer 3:39 :  : Node : Normalizer : 3:39 : No columns included - input stays unchanged.
+2025-05-28 12:48:15,075 : WARN  : KNIME-Worker-20-Normalizer 3:39 :  : Node : Number to String : 3:41 : No columns selected.
+2025-05-28 12:48:15,079 : WARN  : KNIME-Worker-17-Number to String 3:41 :  : Node : Number to String : 3:41 : No columns selected for conversion, returning the unchanged input table as output table.
+2025-05-28 12:48:41,294 : ERROR : Thread-14266 :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:41 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:19, 3:22, 3:24, 3:28, 3:31, 3:33, 3:34, 3:35, 3:39, 3:40, 3:42, 3:43, 3:44] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 12:48:41,297 : ERROR : Thread-14268 :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 12:48:41,299 : ERROR : Thread-14270 :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:41 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:19, 3:22, 3:24, 3:28, 3:31, 3:33, 3:34, 3:35, 3:39, 3:40, 3:42, 3:43, 3:44] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 45)
+2025-05-28 12:48:44,662 : ERROR : Thread-14437 :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:39 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:19, 3:22, 3:24, 3:28, 3:31, 3:33, 3:34, 3:35, 3:40, 3:42, 3:43, 3:44] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 12:48:44,676 : ERROR : Thread-14439 :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 12:48:44,677 : ERROR : Thread-14441 :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:39 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:19, 3:22, 3:24, 3:28, 3:31, 3:33, 3:34, 3:35, 3:40, 3:42, 3:43, 3:44] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 45)
+2025-05-28 12:48:46,730 : ERROR : Thread-14540 :  : KnimeBrowserView :  :  : %cerror%c Error captured hook ::  
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 12:57:27,092 : ERROR : Thread-28170 :  : KnimeBrowserView :  :  : %cerror%c Error captured hook ::  
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 13:00:51,870 : WARN  : comm-pool-thread-2 :  : Node : Low Variance Filter : 3:46 : Auto-configuration: Using all double-compatible columns and a threshold value of 0
+2025-05-28 13:08:40,725 : ERROR : KNIME-Worker-57-Column Appender 3:48 :  : Node : Column Appender : 3:48 : Execute failed: Tables can't be joined, non matching row counts: 2508 vs. 5894
+java.lang.IllegalArgumentException: Tables can't be joined, non matching row counts: 2508 vs. 5894
+	at org.knime.core.data.container.JoinedTable.create(JoinedTable.java:303)
+	at org.knime.core.data.container.JoinedTable.create(JoinedTable.java:281)
+	at org.knime.core.data.container.BufferedTableBackend.append(BufferedTableBackend.java:168)
+	at org.knime.core.node.ExecutionContext.createJoinedTable(ExecutionContext.java:643)
+	at org.knime.base.node.preproc.columnappend2.ColumnAppender2NodeModel.joinTablesWithIdenticalKeys(ColumnAppender2NodeModel.java:273)
+	at org.knime.base.node.preproc.columnappend2.ColumnAppender2NodeModel.execute(ColumnAppender2NodeModel.java:203)
+	at org.knime.core.node.NodeModel.execute(NodeModel.java:820)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:596)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1284)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:603)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-05-28 13:15:17,020 : ERROR : comm-pool-thread-2 :  : Node : Table Manipulator : 3:35 : Configure failed (IllegalArgumentException): Duplicate column name "Sentiment" at positions 0 and 1618.
+java.lang.IllegalArgumentException: Duplicate column name "Sentiment" at positions 0 and 1618.
+	at org.knime.core.data.DataTableSpec.<init>(DataTableSpec.java:501)
+	at org.knime.core.data.DataTableSpec.<init>(DataTableSpec.java:471)
+	at org.knime.core.data.DataTableSpec.<init>(DataTableSpec.java:428)
+	at org.knime.filehandling.core.node.table.reader.selector.TableTransformationUtils.toDataTableSpec(TableTransformationUtils.java:96)
+	at org.knime.filehandling.core.node.table.reader.config.tablespec.DefaultTableSpecConfig.getDataTableSpec(DefaultTableSpecConfig.java:183)
+	at org.knime.filehandling.core.node.table.reader.DefaultMultiTableRead.<init>(DefaultMultiTableRead.java:134)
+	at org.knime.filehandling.core.node.table.reader.DefaultStagedMultiTableRead.createMultiTableRead(DefaultStagedMultiTableRead.java:193)
+	at org.knime.filehandling.core.node.table.reader.DefaultStagedMultiTableRead.withTransformation(DefaultStagedMultiTableRead.java:185)
+	at org.knime.filehandling.core.node.table.reader.DefaultStagedMultiTableRead.withoutTransformation(DefaultStagedMultiTableRead.java:170)
+	at org.knime.filehandling.core.node.table.reader.MultiTableReader.createTableSpecConfig(MultiTableReader.java:148)
+	at org.knime.base.node.preproc.manipulator.TableManipulatorNodeModel.configure(TableManipulatorNodeModel.java:154)
+	at org.knime.core.node.NodeModel.configureModel(NodeModel.java:1139)
+	at org.knime.core.node.Node.invokeNodeModelConfigure(Node.java:2025)
+	at org.knime.core.node.Node.configure(Node.java:1968)
+	at org.knime.core.node.workflow.NativeNodeContainer.performConfigure(NativeNodeContainer.java:574)
+	at org.knime.core.node.workflow.SingleNodeContainer.callNodeConfigure(SingleNodeContainer.java:315)
+	at org.knime.core.node.workflow.SingleNodeContainer.configure(SingleNodeContainer.java:200)
+	at org.knime.core.node.workflow.WorkflowManager.configureSingleNodeContainer(WorkflowManager.java:6850)
+	at org.knime.core.node.workflow.WorkflowManager.configureNodeAndPortSuccessors(WorkflowManager.java:7031)
+	at org.knime.core.node.workflow.WorkflowManager.configureNodeAndSuccessors(WorkflowManager.java:6964)
+	at org.knime.core.node.workflow.WorkflowManager.resetAndConfigureNodeAndSuccessors(WorkflowManager.java:5562)
+	at org.knime.core.node.workflow.WorkflowManager.resetAndConfigureNode(WorkflowManager.java:5467)
+	at org.knime.core.node.workflow.WorkflowManager.addConnection(WorkflowManager.java:1450)
+	at org.knime.core.node.workflow.WorkflowManager.addConnection(WorkflowManager.java:1366)
+	at org.knime.gateway.impl.webui.service.commands.util.NodeConnector.connect(NodeConnector.java:276)
+	at org.knime.gateway.impl.webui.service.commands.Connect.executeWithLockedWorkflow(Connect.java:94)
+	at org.knime.gateway.impl.webui.service.commands.AbstractWorkflowCommand.execute(AbstractWorkflowCommand.java:76)
+	at org.knime.gateway.impl.webui.service.commands.WorkflowCommands.executeCommandAndModifyCommandStacks(WorkflowCommands.java:289)
+	at org.knime.gateway.impl.webui.service.commands.WorkflowCommands.execute(WorkflowCommands.java:177)
+	at org.knime.gateway.impl.webui.service.DefaultWorkflowService.executeWorkflowCommand(DefaultWorkflowService.java:167)
+	at org.knime.gateway.impl.webui.jsonrpc.service.JsonRpcWorkflowServiceWrapper.executeWorkflowCommand(JsonRpcWorkflowServiceWrapper.java:92)
+	at jdk.internal.reflect.GeneratedMethodAccessor184.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.invoke(JsonRpcBasicServer.java:478)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleObject(JsonRpcBasicServer.java:349)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleJsonNodeRequest(JsonRpcBasicServer.java:274)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleRequest(JsonRpcBasicServer.java:242)
+	at org.knime.gateway.impl.jsonrpc.JsonRpcRequestHandler.handle(JsonRpcRequestHandler.java:104)
+	at org.knime.ui.java.browser.lifecycle.Init.lambda$13(Init.java:290)
+	at com.equo.comm.common.MessageHandler.processReceivedEventMessage(MessageHandler.java:131)
+	at com.equo.comm.ee.provider.service.ChromiumService.receiveMessage(ChromiumService.java:98)
+	at com.equo.comm.ee.provider.CommunicationManagerChromiumImpl.receiveMessage(CommunicationManagerChromiumImpl.java:48)
+	at com.equo.chromium.swt.internal.spi.CommRouterHandler.handleRequest(CommRouterHandler.java:33)
+	at com.equo.chromium.swt.internal.spi.CommRouterHandler.lambda$1(CommRouterHandler.java:51)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025-05-28 13:15:38,787 : ERROR : comm-pool-thread-2 :  : Node : Table Manipulator : 3:35 : Configure failed (IllegalArgumentException): Duplicate column name "Sentiment" at positions 0 and 1618.
+java.lang.IllegalArgumentException: Duplicate column name "Sentiment" at positions 0 and 1618.
+	at org.knime.core.data.DataTableSpec.<init>(DataTableSpec.java:501)
+	at org.knime.core.data.DataTableSpec.<init>(DataTableSpec.java:471)
+	at org.knime.core.data.DataTableSpec.<init>(DataTableSpec.java:428)
+	at org.knime.filehandling.core.node.table.reader.selector.TableTransformationUtils.toDataTableSpec(TableTransformationUtils.java:96)
+	at org.knime.filehandling.core.node.table.reader.config.tablespec.DefaultTableSpecConfig.getDataTableSpec(DefaultTableSpecConfig.java:183)
+	at org.knime.filehandling.core.node.table.reader.DefaultMultiTableRead.<init>(DefaultMultiTableRead.java:134)
+	at org.knime.filehandling.core.node.table.reader.DefaultStagedMultiTableRead.createMultiTableRead(DefaultStagedMultiTableRead.java:193)
+	at org.knime.filehandling.core.node.table.reader.DefaultStagedMultiTableRead.withTransformation(DefaultStagedMultiTableRead.java:185)
+	at org.knime.filehandling.core.node.table.reader.DefaultStagedMultiTableRead.withoutTransformation(DefaultStagedMultiTableRead.java:170)
+	at org.knime.filehandling.core.node.table.reader.MultiTableReader.createTableSpecConfig(MultiTableReader.java:148)
+	at org.knime.base.node.preproc.manipulator.TableManipulatorNodeModel.configure(TableManipulatorNodeModel.java:154)
+	at org.knime.core.node.NodeModel.configureModel(NodeModel.java:1139)
+	at org.knime.core.node.Node.invokeNodeModelConfigure(Node.java:2025)
+	at org.knime.core.node.Node.configure(Node.java:1968)
+	at org.knime.core.node.workflow.NativeNodeContainer.performConfigure(NativeNodeContainer.java:574)
+	at org.knime.core.node.workflow.SingleNodeContainer.callNodeConfigure(SingleNodeContainer.java:315)
+	at org.knime.core.node.workflow.SingleNodeContainer.configure(SingleNodeContainer.java:200)
+	at org.knime.core.node.workflow.WorkflowManager.configureSingleNodeContainer(WorkflowManager.java:6850)
+	at org.knime.core.node.workflow.WorkflowManager.configureNodeAndPortSuccessors(WorkflowManager.java:7031)
+	at org.knime.core.node.workflow.WorkflowManager.configureNodeAndPortSuccessors(WorkflowManager.java:6969)
+	at org.knime.core.node.workflow.WorkflowManager.configureNodeAndSuccessors(WorkflowManager.java:6949)
+	at org.knime.core.node.workflow.WorkflowManager.loadNodeSettings(WorkflowManager.java:2250)
+	at org.knime.core.webui.node.dialog.ApplyData.applyChange(ApplyData.java:206)
+	at org.knime.core.webui.node.dialog.ApplyData.applyDataOrThrow(ApplyData.java:138)
+	at org.knime.core.webui.node.dialog.ApplyData.applyData(ApplyData.java:114)
+	at org.knime.core.webui.data.ApplyDataService.applyDataWithContext(ApplyDataService.java:144)
+	at org.knime.core.webui.data.ApplyDataService.applyData(ApplyDataService.java:133)
+	at org.knime.core.webui.node.DataServiceManager.callApplyDataService(DataServiceManager.java:191)
+	at org.knime.core.wizard.rpc.DefaultNodeService.callNodeDataService(DefaultNodeService.java:154)
+	at jdk.internal.reflect.GeneratedMethodAccessor264.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.invoke(JsonRpcBasicServer.java:478)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleObject(JsonRpcBasicServer.java:349)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleJsonNodeRequest(JsonRpcBasicServer.java:274)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleRequest(JsonRpcBasicServer.java:242)
+	at org.knime.core.webui.data.rpc.json.impl.JsonRpcServer.handleRequest(JsonRpcServer.java:150)
+	at org.knime.core.wizard.rpc.JsonRpcFunction.call(JsonRpcFunction.java:195)
+	at com.equo.comm.common.MessageHandler.processReceivedEventMessage(MessageHandler.java:131)
+	at com.equo.comm.ee.provider.service.ChromiumService.receiveMessage(ChromiumService.java:98)
+	at com.equo.comm.ee.provider.CommunicationManagerChromiumImpl.receiveMessage(CommunicationManagerChromiumImpl.java:48)
+	at com.equo.chromium.swt.internal.spi.CommRouterHandler.handleRequest(CommRouterHandler.java:33)
+	at com.equo.chromium.swt.internal.spi.CommRouterHandler.lambda$1(CommRouterHandler.java:51)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025-05-28 13:15:51,230 : ERROR : KNIME-Worker-66-Number to String 3:34 :  : Node : Table Manipulator : 3:35 : Configure failed (IllegalArgumentException): Duplicate column name "Sentiment" at positions 0 and 1618.
+java.lang.IllegalArgumentException: Duplicate column name "Sentiment" at positions 0 and 1618.
+	at org.knime.core.data.DataTableSpec.<init>(DataTableSpec.java:501)
+	at org.knime.core.data.DataTableSpec.<init>(DataTableSpec.java:471)
+	at org.knime.core.data.DataTableSpec.<init>(DataTableSpec.java:428)
+	at org.knime.filehandling.core.node.table.reader.selector.TableTransformationUtils.toDataTableSpec(TableTransformationUtils.java:96)
+	at org.knime.filehandling.core.node.table.reader.config.tablespec.DefaultTableSpecConfig.getDataTableSpec(DefaultTableSpecConfig.java:183)
+	at org.knime.filehandling.core.node.table.reader.DefaultMultiTableRead.<init>(DefaultMultiTableRead.java:134)
+	at org.knime.filehandling.core.node.table.reader.DefaultStagedMultiTableRead.createMultiTableRead(DefaultStagedMultiTableRead.java:193)
+	at org.knime.filehandling.core.node.table.reader.DefaultStagedMultiTableRead.withTransformation(DefaultStagedMultiTableRead.java:185)
+	at org.knime.filehandling.core.node.table.reader.DefaultStagedMultiTableRead.withoutTransformation(DefaultStagedMultiTableRead.java:170)
+	at org.knime.filehandling.core.node.table.reader.MultiTableReader.createTableSpecConfig(MultiTableReader.java:148)
+	at org.knime.base.node.preproc.manipulator.TableManipulatorNodeModel.configure(TableManipulatorNodeModel.java:154)
+	at org.knime.core.node.NodeModel.configureModel(NodeModel.java:1139)
+	at org.knime.core.node.Node.invokeNodeModelConfigure(Node.java:2025)
+	at org.knime.core.node.Node.configure(Node.java:1968)
+	at org.knime.core.node.workflow.NativeNodeContainer.performConfigure(NativeNodeContainer.java:574)
+	at org.knime.core.node.workflow.SingleNodeContainer.callNodeConfigure(SingleNodeContainer.java:315)
+	at org.knime.core.node.workflow.SingleNodeContainer.configure(SingleNodeContainer.java:200)
+	at org.knime.core.node.workflow.WorkflowManager.configureSingleNodeContainer(WorkflowManager.java:6850)
+	at org.knime.core.node.workflow.WorkflowManager.configureNodeAndPortSuccessors(WorkflowManager.java:7031)
+	at org.knime.core.node.workflow.WorkflowManager.configureNodeAndPortSuccessors(WorkflowManager.java:6969)
+	at org.knime.core.node.workflow.WorkflowManager.doAfterExecution(WorkflowManager.java:3737)
+	at org.knime.core.node.workflow.NodeContainer.notifyParentExecuteFinished(NodeContainer.java:689)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:235)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2025-05-28 13:16:52,135 : ERROR : Thread-77563 :  : KnimeBrowserView :  :  : %cerror%c Error captured hook ::  
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 13:19:15,674 : ERROR : Thread-83308 :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:47 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:19, 3:22, 3:24, 3:28, 3:31, 3:33, 3:34, 3:35, 3:40, 3:42, 3:43, 3:44, 3:45, 3:49] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 13:19:15,680 : ERROR : Thread-83310 :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 13:19:15,682 : ERROR : Thread-83312 :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:47 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:19, 3:22, 3:24, 3:28, 3:31, 3:33, 3:34, 3:35, 3:40, 3:42, 3:43, 3:44, 3:45, 3:49] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 45)
+2025-05-28 13:22:45,340 : WARN  : main :  : Node : Partitioning : 3:12 : Column 'Sentiment' for stratified sampling does not exist
+2025-05-28 13:22:46,648 : WARN  : main :  : Node : Partitioning : 3:12 : Column 'Sentiment' for stratified sampling does not exist
+2025-05-28 13:23:01,692 : WARN  : KNIME-Worker-0-Table Manipulator 3:35 :  : Node : Partitioning : 3:12 : Column 'Sentiment' for stratified sampling does not exist
+2025-05-28 13:23:46,828 : WARN  : comm-pool-thread-2 :  : Node : String to Number : 3:45 : No columns selected
+2025-05-28 13:23:46,832 : WARN  : comm-pool-thread-2 :  : Node : Partitioning : 3:12 : Column 'Sentiment' for stratified sampling does not exist
+2025-05-28 13:23:47,790 : WARN  : KNIME-Worker-0-String to Number 3:45 :  : Node : String to Number : 3:45 : No columns selected, returning input table.
+2025-05-28 13:23:47,794 : WARN  : KNIME-Worker-0-String to Number 3:45 :  : Node : Partitioning : 3:12 : Column 'Sentiment' for stratified sampling does not exist
+2025-05-28 13:23:58,916 : WARN  : main :  : Node : Decision Tree Learner : 3:40 : Class column "Sentiment" not found or incompatible
+2025-05-28 13:23:59,605 : WARN  : main :  : Node : Decision Tree Learner : 3:40 : Class column "Sentiment" not found or incompatible
+2025-05-28 13:24:01,392 : WARN  : KNIME-Worker-0-Partitioning 3:12 :  : Node : Decision Tree Learner : 3:40 : Class column "Sentiment" not found or incompatible
+2025-05-28 13:24:14,187 : WARN  : main :  : Node : Scorer : 3:22 : The input table must have at least two colums to compare
+2025-05-28 13:24:15,309 : WARN  : main :  : Node : Scorer : 3:22 : The input table must have at least two colums to compare
+2025-05-28 13:30:15,773 : WARN  : KNIME-Worker-0-Decision Tree Learner 3:40 :  : Node : Decision Tree Learner : 3:40 : Execution canceled
+2025-05-28 13:30:47,661 : WARN  : KNIME-Worker-13-Document Vector 3:24 :  : Node : String to Number : 3:45 : No columns selected
+2025-05-28 13:30:47,669 : WARN  : KNIME-Worker-13-Document Vector 3:24 :  : Node : Scorer : 3:22 : The input table must have at least two colums to compare
+2025-05-28 13:30:48,354 : WARN  : KNIME-Worker-4-Table Manipulator 3:35 :  : Node : String to Number : 3:45 : No columns selected
+2025-05-28 13:30:48,364 : WARN  : KNIME-Worker-4-Table Manipulator 3:35 :  : Node : Scorer : 3:22 : The input table must have at least two colums to compare
+2025-05-28 13:30:48,366 : WARN  : KNIME-Worker-7-String to Number 3:45 :  : Node : String to Number : 3:45 : No columns selected, returning input table.
+2025-05-28 13:31:22,706 : WARN  : KNIME-Worker-16-Column Filter 3:43 :  : Node : Scorer : 3:22 : The input table must have at least two colums to compare
+2025-05-28 13:31:41,718 : WARN  : comm-pool-thread-2 :  : Node : Scorer : 3:22 : Column 'Sentiment' not found.
+2025-05-28 13:31:43,260 : WARN  : KNIME-Worker-10-Column Filter 3:43 :  : Node : Scorer : 3:22 : Column 'Sentiment' not found.
+2025-05-28 13:31:47,658 : WARN  : comm-pool-thread-2 :  : Node : Scorer : 3:22 : Column 'Sentiment' not found.
+2025-05-28 13:31:52,439 : WARN  : comm-pool-thread-2 :  : Node : Scorer : 3:22 : Column 'Sentiment' not found.
+2025-05-28 13:32:49,502 : WARN  : comm-pool-thread-2 :  : Node : Scorer : 3:22 : Column 'Sentiment' not found.
+2025-05-28 13:34:43,517 : ERROR : Thread-15971 :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:43 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:19, 3:22, 3:24, 3:28, 3:31, 3:33, 3:34, 3:35, 3:40, 3:42, 3:44, 3:45, 3:49] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 13:34:43,518 : ERROR : Thread-15973 :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-28 13:34:43,520 : ERROR : Thread-15975 :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:43 valid [3:1, 3:2, 3:3, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12, 3:19, 3:22, 3:24, 3:28, 3:31, 3:33, 3:34, 3:35, 3:40, 3:42, 3:44, 3:45, 3:49] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 45)
+2025-05-28 13:34:55,264 : WARN  : comm-pool-thread-2 :  : Node : PMML Writer : 3:50 : Please specify a file
+2025-05-28 17:45:47,332 : WARN  : ModalContext :  : Node : String to Number : 3:45 : No columns selected, returning input table.
+2025-05-28 17:54:26,137 : WARN  : comm-pool-thread-4 :  : Node : Pie Chart : 3:51 : Table contains no compatible (nominal) category columns
+2025-05-28 17:54:32,042 : WARN  : comm-pool-thread-4 :  : Node : Pie Chart : 3:51 : Table contains no compatible (nominal) category columns

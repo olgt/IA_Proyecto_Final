@@ -198,3 +198,57 @@ java.lang.IllegalArgumentException: Location must be absolute: ..
 	at org.eclipse.equinox.internal.p2.core.ProvisioningEventBus.dispatchEvent(ProvisioningEventBus.java:1)
 	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
 	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+!SESSION 2025-05-27 22:13:59.045 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.knime.product 1 0 2025-05-28 00:38:12.922
+!MESSAGE ShellExec command: C:\Users\olgt1\AppData\Local\Programs\KNIME\plugins\org.knime.python.llm.channel.bin.win32.x86_64_5.4.4.v202504301719/bin/create_env.bat
+
+!ENTRY org.knime.product 1 0 2025-05-28 00:38:12.928
+!MESSAGE ShellExec directory : C:\Users\olgt1\AppData\Local\Programs\KNIME\plugins\org.knime.python.llm.channel.bin.win32.x86_64_5.4.4.v202504301719/bin
+
+!ENTRY org.knime.product 1 0 2025-05-28 00:48:43.045
+!MESSAGE Standard output: Found KNIME_PYTHON_PACKAGE_REPO_URL=C:\Users\olgt1\AppData\Local\Programs\KNIME\plugins\org.knime.python.llm.channel.bin.win32.x86_64_5.4.4.v202504301719\bin\..\pkgs, using packages from there for installation
+The extension is org_knime_python_llm
+The bundling home is set to: C:\Users\olgt1\AppData\Local\Programs\KNIME\bundling\envs
+The bundling_parent contains a backslash.
+The bundle path is set to: C:\Users\olgt1\AppData\Local\Programs\KNIME\bundling\envs\org_knime_python_llm_5.4.4
+
+!SESSION 2025-05-28 08:45:06.399 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2025-05-28 09:10:37.171
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 4 10050 2025-05-28 09:10:37.171
+!MESSAGE Cannot complete the request.  See the error log for details.
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10005 2025-05-28 09:10:37.171
+!MESSAGE "KNIME Base Chemistry Types & Nodes" will be ignored because it is already installed.
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2025-05-28 09:10:37.184
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 4 10050 2025-05-28 09:10:37.184
+!MESSAGE Cannot complete the request.  See the error log for details.
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10005 2025-05-28 09:10:37.184
+!MESSAGE "KNIME Base Chemistry Types & Nodes" will be ignored because it is already installed.
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2025-05-28 09:11:16.568
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 4 10050 2025-05-28 09:11:16.568
+!MESSAGE Cannot complete the request.  See the error log for details.
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10005 2025-05-28 09:11:16.568
+!MESSAGE "KNIME Base Chemistry Types & Nodes" will be ignored because it is already installed.
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2025-05-28 09:11:16.571
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 4 10050 2025-05-28 09:11:16.571
+!MESSAGE Cannot complete the request.  See the error log for details.
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10005 2025-05-28 09:11:16.571
+!MESSAGE "KNIME Base Chemistry Types & Nodes" will be ignored because it is already installed.

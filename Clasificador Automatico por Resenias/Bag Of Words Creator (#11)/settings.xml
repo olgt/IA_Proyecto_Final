@@ -10,7 +10,7 @@
             <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
-        <entry key="DocumentColumn" type="xstring" value="Document"/>
+        <entry key="DocumentColumn" type="xstring" value="reviewTextDoc"/>
         <config key="TermColumn_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -23,16 +23,14 @@
         <config key="ColumnFilter">
             <entry key="filter-type" type="xstring" value="STANDARD"/>
             <config key="included_names">
-                <entry key="array-size" type="xint" value="6"/>
-                <entry key="0" type="xstring" value="id"/>
-                <entry key="1" type="xstring" value="overall"/>
-                <entry key="2" type="xstring" value="reviewText"/>
-                <entry key="3" type="xstring" value="Sentiment"/>
-                <entry key="4" type="xstring" value="Document"/>
-                <entry key="5" type="xstring" value="Preprocessed Document"/>
+                <entry key="array-size" type="xint" value="2"/>
+                <entry key="0" type="xstring" value="Sentiment"/>
+                <entry key="1" type="xstring" value="reviewTextDoc"/>
             </config>
             <config key="excluded_names">
-                <entry key="array-size" type="xint" value="0"/>
+                <entry key="array-size" type="xint" value="2"/>
+                <entry key="0" type="xstring" value="overall"/>
+                <entry key="1" type="xstring" value="reviewText"/>
             </config>
             <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
             <config key="name_pattern">
@@ -43,8 +41,8 @@
             </config>
             <config key="datatype">
                 <config key="typelist">
-                    <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
                     <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
                     <entry key="org.knime.ext.textprocessing.data.DocumentValue" type="xboolean" value="false"/>
                     <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
                     <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
@@ -90,12 +88,12 @@
             <entry key="index" type="xint" value="1"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-            <entry key="port_object_summary" type="xstring" value="Rows: 132260, Cols: 5"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 2651, Cols: 3"/>
             <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="2cd59144-77f6-4056-bd7b-331b782d918e"/>
+        <entry key="file_store_id" type="xstring" value="a3e949f9-6305-463e-822e-4ee1f0751dfe"/>
     </config>
 </config>

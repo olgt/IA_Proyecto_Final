@@ -7,13 +7,14 @@
     </config>
     <config key="model">
         <config key="rules">
-            <entry key="array-size" type="xint" value="6"/>
+            <entry key="array-size" type="xint" value="7"/>
             <entry key="0" type="xstring" value="// enter ordered set of rules, e.g.:"/>
             <entry key="1" type="xstring" value="// $double column name$ &gt; 5.0 =&gt; &quot;large&quot;"/>
             <entry key="2" type="xstring" value="// $string column name$ LIKE &quot;*blue*&quot; =&gt; &quot;small and blue&quot;"/>
             <entry key="3" type="xstring" value="// TRUE =&gt; &quot;default outcome&quot;"/>
             <entry key="4" type="xstring" value="$overall$ &gt;= 4 =&gt; &quot;positive&quot;"/>
             <entry key="5" type="xstring" value="$overall$ &lt;= 2 =&gt; &quot;negative&quot;"/>
+            <entry key="6" type="xstring" value="$overall$ = 3 =&gt; &quot;neutral&quot;"/>
         </config>
         <entry key="new-column-name" type="xstring" value="Sentiment"/>
         <entry key="replace-column-name" type="xstring" value="overall"/>
@@ -56,12 +57,12 @@
             <entry key="index" type="xint" value="1"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-            <entry key="port_object_summary" type="xstring" value="Rows: 56845, Cols: 3"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 1136, Cols: 3"/>
             <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="e9521fe7-e023-49c0-ab1f-4a2fce03d100"/>
+        <entry key="file_store_id" type="xstring" value="caeef3cb-afe7-42d3-973c-bc8afbac4ac4"/>
     </config>
 </config>

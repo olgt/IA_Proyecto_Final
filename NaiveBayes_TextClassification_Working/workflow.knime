@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config key="workflow.knime">
+    <entry key="name" type="xstring">NaiveBayes_TextClassification_Working</entry>
+    <entry key="version" type="xstring">4.7.0</entry>
+</config>

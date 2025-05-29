@@ -36,39 +36,39 @@
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="Accuracy"/>
             <entry key="class" type="xstring" value="DOUBLE"/>
-            <entry key="value" type="xdouble" value="1.0"/>
+            <entry key="value" type="xdouble" value="0.9616908850726552"/>
         </config>
         <config key="Variable_6">
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="Error"/>
             <entry key="class" type="xstring" value="DOUBLE"/>
-            <entry key="value" type="xdouble" value="0.0"/>
+            <entry key="value" type="xdouble" value="0.03830911492734478"/>
         </config>
         <config key="Variable_7">
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="#Correct"/>
             <entry key="class" type="xstring" value="INTEGER"/>
-            <entry key="value" type="xint" value="24514"/>
+            <entry key="value" type="xint" value="728"/>
         </config>
         <config key="Variable_8">
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="#False"/>
             <entry key="class" type="xstring" value="INTEGER"/>
-            <entry key="value" type="xint" value="0"/>
+            <entry key="value" type="xint" value="29"/>
         </config>
         <config key="Variable_9">
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="Cohen's kappa"/>
             <entry key="class" type="xstring" value="DOUBLE"/>
-            <entry key="value" type="xdouble" value="1.0"/>
+            <entry key="value" type="xdouble" value="0.7897806164954179"/>
         </config>
     </config>
     <config key="internal_node_subsettings">
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="first" type="xstring" value="Sentiment"/>
-        <entry key="second" type="xstring" value="Prediction (Sentiment)"/>
+        <entry key="first" type="xstring" value="prediction"/>
+        <entry key="second" type="xstring" value="Prediction (prediction)"/>
         <entry key="flowVarPrefix" type="xstring" isnull="true" value=""/>
         <entry key="sortingReversed" type="xboolean" value="false"/>
         <entry key="sortingStrategy" type="xint" value="0"/>
@@ -76,10 +76,6 @@
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="EXECUTED"/>
-    <config key="nodecontainer_message">
-        <entry key="type" type="xstring" value="WARNING"/>
-        <entry key="message" type="xstring" value="There were missing values in the reference or in the prediction class columns."/>
-    </config>
     <entry key="factory" type="xstring" value="org.knime.base.node.mine.scorer.accuracy.AccuracyScorer2NodeFactory"/>
     <entry key="node-name" type="xstring" value="Scorer"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
@@ -112,6 +108,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="c3da29f9-583f-4bb2-b5bf-c58932165a35"/>
+        <entry key="file_store_id" type="xstring" value="8aca54b1-9874-4edf-9486-dd6e90b82547"/>
     </config>
 </config>

@@ -7,11 +7,11 @@
     </config>
     <config key="model">
         <entry key="method" type="xstring" value="Relative"/>
-        <entry key="samplingMethod" type="xstring" value="Random"/>
+        <entry key="samplingMethod" type="xstring" value="Stratified"/>
         <entry key="fraction" type="xdouble" value="0.8"/>
         <entry key="count" type="xint" value="100"/>
         <entry key="random_seed" type="xstring" isnull="true" value=""/>
-        <entry key="class_column" type="xstring" isnull="true" value=""/>
+        <entry key="class_column" type="xstring" value="prediction"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="EXECUTED"/>
@@ -34,19 +34,19 @@
             <entry key="index" type="xint" value="1"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-            <entry key="port_object_summary" type="xstring" value="Rows: 105808, Cols: 5"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 3028, Cols: 1154"/>
             <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
         <config key="port_2">
             <entry key="index" type="xint" value="2"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-            <entry key="port_object_summary" type="xstring" value="Rows: 26452, Cols: 5"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 757, Cols: 1154"/>
             <entry key="port_dir_location" type="xstring" value="port_2"/>
         </config>
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="0ac499fb-dc6c-4a2f-9286-dc1188d8f929"/>
+        <entry key="file_store_id" type="xstring" value="719e1c16-7b17-4bf0-9116-cd654bb81ef2"/>
     </config>
 </config>

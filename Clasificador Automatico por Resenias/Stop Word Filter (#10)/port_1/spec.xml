@@ -49,17 +49,23 @@
         </config>
         <config key="column_domain">
             <config key="possible_values">
-                <entry key="array-size" type="xint" value="2"/>
+                <entry key="array-size" type="xint" value="3"/>
                 <config key="0">
                     <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
                     <config key="org.knime.core.data.def.StringCell">
-                        <entry key="StringCell" type="xstring" value="negative"/>
+                        <entry key="StringCell" type="xstring" value="positive"/>
                     </config>
                 </config>
                 <config key="1">
                     <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
                     <config key="org.knime.core.data.def.StringCell">
-                        <entry key="StringCell" type="xstring" value="positive"/>
+                        <entry key="StringCell" type="xstring" value="negative"/>
+                    </config>
+                </config>
+                <config key="2">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="neutral"/>
                     </config>
                 </config>
             </config>
@@ -68,7 +74,7 @@
         <config key="meta_data"/>
     </config>
     <config key="column_spec_3">
-        <entry key="column_name" type="xstring" value="Document"/>
+        <entry key="column_name" type="xstring" value="reviewTextDoc"/>
         <config key="element_names">
             <entry key="array-size" type="xint" value="0"/>
         </config>
@@ -76,9 +82,7 @@
             <entry key="cell_class" type="xstring" value="org.knime.ext.textprocessing.data.filestore.DocumentBufferedFileStoreCell"/>
         </config>
         <config key="column_domain"/>
-        <config key="column_properties">
-            <entry key="Word Tokenizer" type="xstring" value="OpenNLP English WordTokenizer"/>
-        </config>
+        <config key="column_properties"/>
         <config key="meta_data">
             <config key="org.knime.ext.textprocessing.data.tag.TaggedValueMetaData">
                 <config key="tag_sets"/>
