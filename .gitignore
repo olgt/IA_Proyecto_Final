@@ -1,0 +1,14 @@
+# Node.js
+frontend/node_modules/
+
+# .NET
+backend/bin/
+backend/obj/
+
+# KNIME
+backend/knime-sentiment-api/workflow_cache/
+backend/knime-sentiment-api/.metadata/
+
+# Archivos de entorno y logs
+*.log
+.env
