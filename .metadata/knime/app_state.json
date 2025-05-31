@@ -1,14 +1,6 @@
 {
   "version" : "5.4.4.v202504301443",
-  "projects" : [ {
-    "name" : "Clasificador Automatico por Resenias",
-    "active" : true,
-    "origin" : {
-      "providerId" : "local",
-      "spaceId" : "local",
-      "relativePath" : "Clasificador Automatico por Resenias"
-    }
-  } ],
+  "projects" : [ ],
   "mostRecentlyUsedProjects" : [ {
     "name" : "Clasificador Automatico por Resenias",
     "timeUsed" : "2025-05-28T13:21:29.770976-06:00",

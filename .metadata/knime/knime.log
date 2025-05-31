@@ -2325,3 +2325,38 @@ java.lang.IllegalArgumentException: Duplicate column name "Sentiment" at positio
 2025-05-28 17:45:47,332 : WARN  : ModalContext :  : Node : String to Number : 3:45 : No columns selected, returning input table.
 2025-05-28 17:54:26,137 : WARN  : comm-pool-thread-4 :  : Node : Pie Chart : 3:51 : Table contains no compatible (nominal) category columns
 2025-05-28 17:54:32,042 : WARN  : comm-pool-thread-4 :  : Node : Pie Chart : 3:51 : Table contains no compatible (nominal) category columns
+2025-05-29 16:31:07,901 : WARN  : ModalContext :  : Node : String to Number : 3:45 : No columns selected, returning input table.
+2025-05-30 21:01:39,145 : WARN  : ModalContext :  : Node : String to Number : 3:45 : No columns selected, returning input table.
+2025-05-30 21:39:23,439 : WARN  : AWT-EventQueue-0 :  : ColumnHandlingFactorySelectionPanel : Missing Value : 3:5 : get warnings during panel validation: [Some columns no longer exist (red bordered)]
+2025-05-30 21:58:30,307 : WARN  : ModalContext :  : Node : String to Number : 3:45 : No columns selected, returning input table.
+2025-05-30 21:58:59,536 : ERROR : Thread-1984 :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-30 21:58:59,538 : ERROR : Thread-1986 :  : KnimeBrowserView :  :  : Uncaught (in promise) #<Object> (source: http://org.knime.ui.java/workflow/Clasificador%20Automatico%20por%20Resenias_d5680790-6620-46a2-9bf8-101a6f7e7a35/root; line: 1)
+2025-05-30 22:01:37,601 : ERROR : Thread-3929 :  : KnimeBrowserView :  :  : %cerror%c Error captured hook ::  
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-30 22:02:40,787 : ERROR : Thread-6031 :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-30 22:02:40,791 : ERROR : Thread-6034 :  : KnimeBrowserView :  :  : Uncaught (in promise) #<Object> (source: http://org.knime.ui.java/workflow/Clasificador%20Automatico%20por%20Resenias_d5680790-6620-46a2-9bf8-101a6f7e7a35/root; line: 1)
+2025-05-30 22:18:27,432 : ERROR : Thread-45528 :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: http://org.knime.ui.java/assets/index-CnUbjqw_.js; line: 87)
+2025-05-30 22:18:27,436 : ERROR : Thread-45530 :  : KnimeBrowserView :  :  : Uncaught (in promise) #<Object> (source: http://org.knime.ui.java/workflow/Clasificador%20Automatico%20por%20Resenias_d5680790-6620-46a2-9bf8-101a6f7e7a35/root; line: 1)

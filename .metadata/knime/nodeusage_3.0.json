@@ -3,16 +3,50 @@
     "created": "2025-05-25 02:58",
     "nodestats": {
         "nodes": [
+            {
+                "id": "org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory",
+                "nodename": "Column Filter",
+                "nrexecs": 2,
+                "nrfails": 0,
+                "exectime": 53,
+                "nrcreated": 1,
+                "nrsettingsChanged": 2,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.mine.decisiontree2.predictor2.DecTreePredictorNodeFactory",
+                "nodename": "Decision Tree Predictor",
+                "nrexecs": 0,
+                "nrfails": 0,
+                "exectime": 0,
+                "nrcreated": 0,
+                "nrsettingsChanged": 0,
+                "successor": "org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory",
+                "successornodename": "Column Filter"
+            },
+            {
+                "id": "org.knime.base.views.node.roccurve.ROCCurveNodeFactory",
+                "nodename": "ROC Curve",
+                "nrexecs": 0,
+                "nrfails": 0,
+                "exectime": 0,
+                "nrcreated": 0,
+                "nrsettingsChanged": 1,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            }
         ],
         "metaNodes": {
         },
         "wrappedNodes": {
         },
         "createdVia": {
+            "WEB_UI": 1
         }
     },
-    "uptime": 3767211,
-    "workflowsOpened": 0,
+    "uptime": 3720379,
+    "workflowsOpened": 1,
     "remoteWorkflowsOpened": 0,
     "workflowsCreated": 0,
     "remoteWorkflowsCreated": 0,
@@ -21,10 +55,10 @@
     "workflowsExported": 0,
     "webUIPerspectiveSwitches": 0,
     "javaUIPerspectiveSwitches": 0,
-    "lastUsedPerspective": "none (classic)",
-    "launches": 11,
+    "lastUsedPerspective": "none",
+    "launches": 14,
     "lastApplicationID": "org.knime.product.KNIME_APPLICATION",
-    "timeSinceLastStart": 606359,
+    "timeSinceLastStart": 1194981,
     "crashes": 0,
-    "properlyShutDown": true
+    "properlyShutDown": false
 }
